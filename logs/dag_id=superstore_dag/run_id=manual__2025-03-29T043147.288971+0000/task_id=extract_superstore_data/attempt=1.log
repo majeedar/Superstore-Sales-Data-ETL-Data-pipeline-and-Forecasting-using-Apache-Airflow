@@ -1,0 +1,42 @@
+[2025-03-29T04:31:49.916+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-29T04:31:49.935+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: superstore_dag.extract_superstore_data manual__2025-03-29T04:31:47.288971+00:00 [queued]>
+[2025-03-29T04:31:49.948+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: superstore_dag.extract_superstore_data manual__2025-03-29T04:31:47.288971+00:00 [queued]>
+[2025-03-29T04:31:49.951+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2025-03-29T04:31:49.988+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): extract_superstore_data> on 2025-03-29 04:31:47.288971+00:00
+[2025-03-29T04:31:49.996+0000] {standard_task_runner.py:72} INFO - Started process 186 to run task
+[2025-03-29T04:31:50.000+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'superstore_dag', 'extract_superstore_data', 'manual__2025-03-29T04:31:47.288971+00:00', '--job-id', '210', '--raw', '--subdir', 'DAGS_FOLDER/superstore_dag.py', '--cfg-path', '/tmp/tmp0o02qh2_']
+[2025-03-29T04:31:50.003+0000] {standard_task_runner.py:105} INFO - Job 210: Subtask extract_superstore_data
+[2025-03-29T04:31:50.078+0000] {task_command.py:467} INFO - Running <TaskInstance: superstore_dag.extract_superstore_data manual__2025-03-29T04:31:47.288971+00:00 [running]> on host 2eb76630dc09
+[2025-03-29T04:31:50.202+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='superstore_dag' AIRFLOW_CTX_TASK_ID='extract_superstore_data' AIRFLOW_CTX_EXECUTION_DATE='2025-03-29T04:31:47.288971+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-29T04:31:47.288971+00:00'
+[2025-03-29T04:31:50.207+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-29T04:31:50.209+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-29T04:31:50.212+0000] {logging_mixin.py:190} INFO - Current task name:extract_superstore_data state:running start_date:2025-03-29 04:31:49.937615+00:00
+[2025-03-29T04:31:50.214+0000] {logging_mixin.py:190} INFO - Dag name:superstore_dag and current dag run status:running
+[2025-03-29T04:31:50.216+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-03-29T04:31:50.229+0000] {base.py:84} INFO - Retrieving connection '***_maj_db'
+[2025-03-29T04:31:50.273+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/providers/common/sql/hooks/sql.py:400: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  return psql.read_sql(sql, con=conn, params=parameters, **kwargs)
+
+[2025-03-29T04:31:50.622+0000] {python.py:240} INFO - Done. Returned value was:       Row ID        Order ID  Order Date  ... Quantity Discount    Profit
+0          1  CA-2016-152156  2016-11-08  ...        2     0.00   41.9136
+1          2  CA-2016-152156  2016-11-08  ...        3     0.00  219.5820
+2          3  CA-2016-138688  2016-06-12  ...        2     0.00    6.8714
+3          4  US-2015-108966  2015-10-11  ...        5     0.45 -383.0310
+4          5  US-2015-108966  2015-10-11  ...        2     0.20    2.5164
+...      ...             ...         ...  ...      ...      ...       ...
+9989    9990  CA-2014-110422  2014-01-21  ...        3     0.20    4.1028
+9990    9991  CA-2017-121258  2017-02-26  ...        2     0.00   15.6332
+9991    9992  CA-2017-121258  2017-02-26  ...        2     0.20   19.3932
+9992    9993  CA-2017-121258  2017-02-26  ...        4     0.00   13.3200
+9993    9994  CA-2017-119914  2017-05-04  ...        2     0.00   72.9480
+
+[9994 rows x 21 columns]
+[2025-03-29T04:31:50.851+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-03-29T04:31:50.854+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=superstore_dag, task_id=extract_superstore_data, run_id=manual__2025-03-29T04:31:47.288971+00:00, execution_date=20250329T043147, start_date=20250329T043149, end_date=20250329T043150
+[2025-03-29T04:31:50.899+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-03-29T04:31:50.901+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-03-29T04:31:50.903+0000] {logging_mixin.py:190} INFO - Dag name:superstore_dag queued_at:2025-03-29 04:31:47.307965+00:00
+[2025-03-29T04:31:50.905+0000] {logging_mixin.py:190} INFO - Task hostname:2eb76630dc09 operator:PythonOperator
+[2025-03-29T04:31:50.939+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-29T04:31:50.972+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-03-29T04:31:51.001+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

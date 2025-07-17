@@ -1,0 +1,40 @@
+[2025-03-28T17:31:37.309+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-28T17:31:37.329+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: superstore_dag.compare_and_save_records manual__2025-03-28T17:31:29.322473+00:00 [queued]>
+[2025-03-28T17:31:37.340+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: superstore_dag.compare_and_save_records manual__2025-03-28T17:31:29.322473+00:00 [queued]>
+[2025-03-28T17:31:37.343+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2025-03-28T17:31:37.378+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): compare_and_save_records> on 2025-03-28 17:31:29.322473+00:00
+[2025-03-28T17:31:37.389+0000] {standard_task_runner.py:72} INFO - Started process 4555 to run task
+[2025-03-28T17:31:37.395+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'superstore_dag', 'compare_and_save_records', 'manual__2025-03-28T17:31:29.322473+00:00', '--job-id', '169', '--raw', '--subdir', 'DAGS_FOLDER/superstore_dag.py', '--cfg-path', '/tmp/tmpe4ep6gt8']
+[2025-03-28T17:31:37.398+0000] {standard_task_runner.py:105} INFO - Job 169: Subtask compare_and_save_records
+[2025-03-28T17:31:37.472+0000] {task_command.py:467} INFO - Running <TaskInstance: superstore_dag.compare_and_save_records manual__2025-03-28T17:31:29.322473+00:00 [running]> on host b7fc87b83960
+[2025-03-28T17:31:37.605+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='superstore_dag' AIRFLOW_CTX_TASK_ID='compare_and_save_records' AIRFLOW_CTX_EXECUTION_DATE='2025-03-28T17:31:29.322473+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-28T17:31:29.322473+00:00'
+[2025-03-28T17:31:37.608+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-28T17:31:37.611+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-28T17:31:37.614+0000] {logging_mixin.py:190} INFO - Current task name:compare_and_save_records state:running start_date:2025-03-28 17:31:37.331967+00:00
+[2025-03-28T17:31:37.616+0000] {logging_mixin.py:190} INFO - Dag name:superstore_dag and current dag run status:running
+[2025-03-28T17:31:37.619+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-03-28T17:31:37.904+0000] {logging_mixin.py:190} INFO - Number of new records/rows added: 0
+[2025-03-28T17:31:37.906+0000] {logging_mixin.py:190} INFO - Number of old records modified: 0
+[2025-03-28T17:31:38.010+0000] {python.py:240} INFO - Done. Returned value was:       Row ID        Order ID  Order Date  ... Quantity Discount    Profit
+0          1  CA-2016-152156  2016-11-08  ...        2     0.00   41.9136
+1          2  CA-2016-152156  2016-11-08  ...        3     0.00  219.5820
+2          3  CA-2016-138688  2016-06-12  ...        2     0.00    6.8714
+3          4  US-2015-108966  2015-10-11  ...        5     0.45 -383.0310
+4          5  US-2015-108966  2015-10-11  ...        2     0.20    2.5164
+...      ...             ...         ...  ...      ...      ...       ...
+3995    3996  CA-2015-105627  2015-03-08  ...        7     0.00  189.4046
+3996    3997  CA-2015-105627  2015-03-08  ...        5     0.00  223.2855
+3997    3998  CA-2015-105627  2015-03-08  ...        1     0.00    4.4940
+3998    3999  CA-2015-105627  2015-03-08  ...        6     0.00   82.0776
+3999    4000  US-2015-149629  2015-07-17  ...        5     0.20    5.7980
+
+[4000 rows x 21 columns]
+[2025-03-28T17:31:38.144+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-03-28T17:31:38.147+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=superstore_dag, task_id=compare_and_save_records, run_id=manual__2025-03-28T17:31:29.322473+00:00, execution_date=20250328T173129, start_date=20250328T173137, end_date=20250328T173138
+[2025-03-28T17:31:38.188+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-03-28T17:31:38.193+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-03-28T17:31:38.198+0000] {logging_mixin.py:190} INFO - Dag name:superstore_dag queued_at:2025-03-28 17:31:29.340500+00:00
+[2025-03-28T17:31:38.202+0000] {logging_mixin.py:190} INFO - Task hostname:b7fc87b83960 operator:PythonOperator
+[2025-03-28T17:31:38.253+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-28T17:31:38.297+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-03-28T17:31:38.320+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

@@ -1,0 +1,122 @@
+[2025-03-31T13:07:35.222+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-31T13:07:35.244+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: forecast_sales_dag.forecast_aggregate_sales manual__2025-03-31T13:02:27.428230+00:00 [queued]>
+[2025-03-31T13:07:35.254+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: forecast_sales_dag.forecast_aggregate_sales manual__2025-03-31T13:02:27.428230+00:00 [queued]>
+[2025-03-31T13:07:35.258+0000] {taskinstance.py:2865} INFO - Starting attempt 2 of 2
+[2025-03-31T13:07:35.311+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): forecast_aggregate_sales> on 2025-03-31 13:02:27.428230+00:00
+[2025-03-31T13:07:35.320+0000] {standard_task_runner.py:72} INFO - Started process 4222 to run task
+[2025-03-31T13:07:35.325+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'forecast_sales_dag', 'forecast_aggregate_sales', 'manual__2025-03-31T13:02:27.428230+00:00', '--job-id', '276', '--raw', '--subdir', 'DAGS_FOLDER/forecast_etl.py', '--cfg-path', '/tmp/tmp8mlaqwou']
+[2025-03-31T13:07:35.328+0000] {standard_task_runner.py:105} INFO - Job 276: Subtask forecast_aggregate_sales
+[2025-03-31T13:07:35.404+0000] {task_command.py:467} INFO - Running <TaskInstance: forecast_sales_dag.forecast_aggregate_sales manual__2025-03-31T13:02:27.428230+00:00 [running]> on host 2eb76630dc09
+[2025-03-31T13:07:35.546+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='forecast_sales_dag' AIRFLOW_CTX_TASK_ID='forecast_aggregate_sales' AIRFLOW_CTX_EXECUTION_DATE='2025-03-31T13:02:27.428230+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-31T13:02:27.428230+00:00'
+[2025-03-31T13:07:35.549+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-31T13:07:35.552+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-31T13:07:35.554+0000] {logging_mixin.py:190} INFO - Current task name:forecast_aggregate_sales state:running start_date:2025-03-31 13:07:35.246328+00:00
+[2025-03-31T13:07:35.556+0000] {logging_mixin.py:190} INFO - Dag name:forecast_sales_dag and current dag run status:running
+[2025-03-31T13:07:35.559+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-03-31T13:07:35.634+0000] {forecaster.py:961} INFO - Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+[2025-03-31T13:07:35.667+0000] {filesystem.py:118} DEBUG - input tempfile: /tmp/tmpyaxg68o4/n09prci9.json
+[2025-03-31T13:07:35.780+0000] {filesystem.py:118} DEBUG - input tempfile: /tmp/tmpyaxg68o4/ctcpppbn.json
+[2025-03-31T13:07:35.783+0000] {model.py:2042} DEBUG - idx 0
+[2025-03-31T13:07:35.785+0000] {model.py:2043} DEBUG - running CmdStan, num_threads: None
+[2025-03-31T13:07:35.787+0000] {model.py:2055} DEBUG - CmdStan args: ['/home/***/.local/lib/python3.9/site-packages/prophet/stan_model/prophet_model.bin', 'random', 'seed=68980', 'data', 'file=/tmp/tmpyaxg68o4/n09prci9.json', 'init=/tmp/tmpyaxg68o4/ctcpppbn.json', 'output', 'file=/tmp/tmpyaxg68o4/prophet_modelgs2zx0m4/prophet_model-20250331130735.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+[2025-03-31T13:07:35.790+0000] {logging_mixin.py:190} WARNING - 13:07:35 - cmdstanpy - INFO - Chain [1] start processing
+[2025-03-31T13:07:35.790+0000] {model.py:2058} INFO - Chain [1] start processing
+[2025-03-31T13:07:35.861+0000] {logging_mixin.py:190} WARNING - 13:07:35 - cmdstanpy - INFO - Chain [1] done processing
+[2025-03-31T13:07:35.861+0000] {model.py:2115} INFO - Chain [1] done processing
+[2025-03-31T13:07:36.351+0000] {taskinstance.py:3310} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/opt/airflow/dags/forecast_etl.py", line 47, in forecast_aggregate_sales
+    past_future_sales['Order Date'] = pd.to_datetime(past_future_sales['Order Date'])
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/core/tools/datetimes.py", line 1112, in to_datetime
+    values = convert_listlike(arg._values, format)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/core/tools/datetimes.py", line 488, in _convert_listlike_datetimes
+    return _array_strptime_with_fallback(arg, name, utc, format, exact, errors)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/core/tools/datetimes.py", line 519, in _array_strptime_with_fallback
+    result, timezones = array_strptime(arg, fmt, exact=exact, errors=errors, utc=utc)
+  File "strptime.pyx", line 534, in pandas._libs.tslibs.strptime.array_strptime
+  File "strptime.pyx", line 355, in pandas._libs.tslibs.strptime.array_strptime
+ValueError: time data "13/01/2014" doesn't match format "%m/%d/%Y", at position 8. You might want to try:
+    - passing `format` if your strings have a consistent format;
+    - passing `format='ISO8601'` if your strings are all ISO8601 but not necessarily in exactly the same format;
+    - passing `format='mixed'`, and the format will be inferred for each element individually. You might want to use `dayfirst` alongside this.
+[2025-03-31T13:07:36.369+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-03-31T13:07:36.371+0000] {logging_mixin.py:190} INFO - Task start:2025-03-31 13:07:35.246328+00:00 end:2025-03-31 13:07:36.368642+00:00 duration:1.122314
+[2025-03-31T13:07:36.374+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): forecast_aggregate_sales> dag:<DAG: forecast_sales_dag> dagrun:<DagRun forecast_sales_dag @ 2025-03-31 13:02:27.428230+00:00: manual__2025-03-31T13:02:27.428230+00:00, state:running, queued_at: 2025-03-31 13:02:27.441179+00:00. externally triggered: True>
+[2025-03-31T13:07:36.376+0000] {logging_mixin.py:190} INFO - Failure caused by time data "13/01/2014" doesn't match format "%m/%d/%Y", at position 8. You might want to try:
+    - passing `format` if your strings have a consistent format;
+    - passing `format='ISO8601'` if your strings are all ISO8601 but not necessarily in exactly the same format;
+    - passing `format='mixed'`, and the format will be inferred for each element individually. You might want to use `dayfirst` alongside this.
+[2025-03-31T13:07:36.378+0000] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=forecast_sales_dag, task_id=forecast_aggregate_sales, run_id=manual__2025-03-31T13:02:27.428230+00:00, execution_date=20250331T130227, start_date=20250331T130735, end_date=20250331T130736
+[2025-03-31T13:07:36.422+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-03-31T13:07:36.425+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 276 for task forecast_aggregate_sales (time data "13/01/2014" doesn't match format "%m/%d/%Y", at position 8. You might want to try:
+    - passing `format` if your strings have a consistent format;
+    - passing `format='ISO8601'` if your strings are all ISO8601 but not necessarily in exactly the same format;
+    - passing `format='mixed'`, and the format will be inferred for each element individually. You might want to use `dayfirst` alongside this.; 4222)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/cli.py", line 115, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 3004, in _run_raw_task
+    return _run_raw_task(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 3158, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 3182, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/opt/airflow/dags/forecast_etl.py", line 47, in forecast_aggregate_sales
+    past_future_sales['Order Date'] = pd.to_datetime(past_future_sales['Order Date'])
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/core/tools/datetimes.py", line 1112, in to_datetime
+    values = convert_listlike(arg._values, format)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/core/tools/datetimes.py", line 488, in _convert_listlike_datetimes
+    return _array_strptime_with_fallback(arg, name, utc, format, exact, errors)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/core/tools/datetimes.py", line 519, in _array_strptime_with_fallback
+    result, timezones = array_strptime(arg, fmt, exact=exact, errors=errors, utc=utc)
+  File "strptime.pyx", line 534, in pandas._libs.tslibs.strptime.array_strptime
+  File "strptime.pyx", line 355, in pandas._libs.tslibs.strptime.array_strptime
+ValueError: time data "13/01/2014" doesn't match format "%m/%d/%Y", at position 8. You might want to try:
+    - passing `format` if your strings have a consistent format;
+    - passing `format='ISO8601'` if your strings are all ISO8601 but not necessarily in exactly the same format;
+    - passing `format='mixed'`, and the format will be inferred for each element individually. You might want to use `dayfirst` alongside this.
+[2025-03-31T13:07:36.452+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-03-31T13:07:36.490+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-31T13:07:36.516+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

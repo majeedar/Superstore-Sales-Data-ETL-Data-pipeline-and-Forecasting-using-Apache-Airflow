@@ -1,0 +1,100 @@
+[2025-03-31T20:38:21.790+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-31T20:38:21.811+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: forecast_sales_dag.load_data_to_prod_db manual__2025-03-31T20:38:09.840761+00:00 [queued]>
+[2025-03-31T20:38:21.829+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: forecast_sales_dag.load_data_to_prod_db manual__2025-03-31T20:38:09.840761+00:00 [queued]>
+[2025-03-31T20:38:21.832+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2025-03-31T20:38:21.890+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): load_data_to_prod_db> on 2025-03-31 20:38:09.840761+00:00
+[2025-03-31T20:38:21.900+0000] {standard_task_runner.py:72} INFO - Started process 8045 to run task
+[2025-03-31T20:38:21.906+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'forecast_sales_dag', 'load_data_to_prod_db', 'manual__2025-03-31T20:38:09.840761+00:00', '--job-id', '340', '--raw', '--subdir', 'DAGS_FOLDER/forecast_etl.py', '--cfg-path', '/tmp/tmp79vbzxeq']
+[2025-03-31T20:38:21.909+0000] {standard_task_runner.py:105} INFO - Job 340: Subtask load_data_to_prod_db
+[2025-03-31T20:38:21.998+0000] {task_command.py:467} INFO - Running <TaskInstance: forecast_sales_dag.load_data_to_prod_db manual__2025-03-31T20:38:09.840761+00:00 [running]> on host 2eb76630dc09
+[2025-03-31T20:38:22.230+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='forecast_sales_dag' AIRFLOW_CTX_TASK_ID='load_data_to_prod_db' AIRFLOW_CTX_EXECUTION_DATE='2025-03-31T20:38:09.840761+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-31T20:38:09.840761+00:00'
+[2025-03-31T20:38:22.233+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-31T20:38:22.236+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-31T20:38:22.238+0000] {logging_mixin.py:190} INFO - Current task name:load_data_to_prod_db state:running start_date:2025-03-31 20:38:21.813830+00:00
+[2025-03-31T20:38:22.239+0000] {logging_mixin.py:190} INFO - Dag name:forecast_sales_dag and current dag run status:running
+[2025-03-31T20:38:22.240+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-03-31T20:38:22.287+0000] {warnings.py:109} WARNING - /opt/***/dags/forecast_etl.py:78: FutureWarning: Passing literal json to 'read_json' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  forecast_metrics_df = pd.read_json(forecast_metrics_json, orient='records')
+
+[2025-03-31T20:38:22.301+0000] {logging_mixin.py:190} INFO -   Order Date  Aggregate Sales label
+0 2014-01-03            16.45  past
+1 2014-01-04           288.06  past
+2 2014-01-05            19.54  past
+3 2014-01-06          4407.10  past
+4 2014-01-07            87.16  past
+5 2014-01-09            40.54  past
+6 2014-01-10            54.83  past
+7 2014-01-11             9.94  past
+8 2014-01-13          3553.80  past
+9 2014-01-14            61.96  past
+[2025-03-31T20:38:22.310+0000] {logging_mixin.py:190} INFO -      Order Date  Aggregate Sales   label
+1592 2018-12-21          3988.84  future
+1593 2018-12-22          3532.23  future
+1594 2018-12-23          3646.75  future
+1595 2018-12-24          3778.84  future
+1596 2018-12-25          3111.76  future
+1597 2018-12-26          2152.96  future
+1598 2018-12-27          3252.87  future
+1599 2018-12-28          3415.39  future
+1600 2018-12-29          2912.49  future
+1601 2018-12-30          2987.02  future
+[2025-03-31T20:38:22.312+0000] {logging_mixin.py:190} INFO - Order Date         datetime64[ns]
+Aggregate Sales           float64
+label                      object
+dtype: object
+[2025-03-31T20:38:22.321+0000] {logging_mixin.py:190} INFO -   Order Date  Aggregate Sales label
+0 2014-01-03            16.45  past
+1 2014-01-04           288.06  past
+2 2014-01-05            19.54  past
+3 2014-01-06          4407.10  past
+4 2014-01-07            87.16  past
+[2025-03-31T20:38:22.325+0000] {logging_mixin.py:190} INFO - True
+[2025-03-31T20:38:22.329+0000] {logging_mixin.py:190} INFO - Empty DataFrame
+Columns: [Order Date, Aggregate Sales, label]
+Index: []
+[2025-03-31T20:38:22.332+0000] {logging_mixin.py:190} INFO - False
+[2025-03-31T20:38:22.335+0000] {logging_mixin.py:190} INFO - 0
+[2025-03-31T20:38:22.339+0000] {logging_mixin.py:190} INFO - False
+[2025-03-31T20:38:22.342+0000] {logging_mixin.py:190} INFO - Order Date         datetime64[ns]
+Aggregate Sales           float64
+label                      object
+dtype: object
+[2025-03-31T20:38:22.344+0000] {logging_mixin.py:190} INFO - Checking and potentially creating table: forecast_past_future_sales
+[2025-03-31T20:38:22.359+0000] {base.py:84} INFO - Retrieving connection '***_default'
+[2025-03-31T20:38:22.416+0000] {sql.py:624} INFO - Running statement: 
+                IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'forecast_past_future_sales')
+                BEGIN
+                    CREATE TABLE forecast_past_future_sales ([Order Date] DATETIME, [Aggregate Sales] FLOAT, [label] VARCHAR(MAX));
+                    PRINT 'Table forecast_past_future_sales created successfully.';
+                END
+            , parameters: None
+[2025-03-31T20:38:22.499+0000] {logging_mixin.py:190} INFO - Table forecast_past_future_sales exists or was just created.
+[2025-03-31T20:38:22.502+0000] {logging_mixin.py:190} INFO - Checking and potentially creating table: forecast_metrics
+[2025-03-31T20:38:22.536+0000] {sql.py:624} INFO - Running statement: 
+                IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'forecast_metrics')
+                BEGIN
+                    CREATE TABLE forecast_metrics ([Metric] VARCHAR(MAX), [Value] FLOAT);
+                    PRINT 'Table forecast_metrics created successfully.';
+                END
+            , parameters: None
+[2025-03-31T20:38:22.553+0000] {logging_mixin.py:190} INFO - Table forecast_metrics exists or was just created.
+[2025-03-31T20:38:22.556+0000] {logging_mixin.py:190} INFO - Truncating table: forecast_past_future_sales
+[2025-03-31T20:38:22.591+0000] {sql.py:624} INFO - Running statement: TRUNCATE TABLE forecast_past_future_sales, parameters: None
+[2025-03-31T20:38:22.611+0000] {logging_mixin.py:190} INFO - Loading 1602 rows into forecast_past_future_sales
+[2025-03-31T20:38:24.956+0000] {sql.py:757} INFO - Loaded 1000 rows into forecast_past_future_sales so far
+[2025-03-31T20:38:26.034+0000] {sql.py:760} INFO - Done loading. Loaded a total of 1602 rows into forecast_past_future_sales
+[2025-03-31T20:38:26.037+0000] {logging_mixin.py:190} INFO - Truncating table: forecast_metrics
+[2025-03-31T20:38:26.065+0000] {sql.py:624} INFO - Running statement: TRUNCATE TABLE forecast_metrics, parameters: None
+[2025-03-31T20:38:26.080+0000] {logging_mixin.py:190} INFO - Loading 1 rows into forecast_metrics
+[2025-03-31T20:38:26.142+0000] {sql.py:760} INFO - Done loading. Loaded a total of 1 rows into forecast_metrics
+[2025-03-31T20:38:26.144+0000] {logging_mixin.py:190} INFO - Forecast data loaded into production database.
+[2025-03-31T20:38:26.146+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-03-31T20:38:26.157+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-03-31T20:38:26.159+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=forecast_sales_dag, task_id=load_data_to_prod_db, run_id=manual__2025-03-31T20:38:09.840761+00:00, execution_date=20250331T203809, start_date=20250331T203821, end_date=20250331T203826
+[2025-03-31T20:38:26.192+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-03-31T20:38:26.196+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-03-31T20:38:26.199+0000] {logging_mixin.py:190} INFO - Dag name:forecast_sales_dag queued_at:2025-03-31 20:38:09.860486+00:00
+[2025-03-31T20:38:26.202+0000] {logging_mixin.py:190} INFO - Task hostname:2eb76630dc09 operator:PythonOperator
+[2025-03-31T20:38:26.257+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-31T20:38:26.283+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-31T20:38:26.307+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

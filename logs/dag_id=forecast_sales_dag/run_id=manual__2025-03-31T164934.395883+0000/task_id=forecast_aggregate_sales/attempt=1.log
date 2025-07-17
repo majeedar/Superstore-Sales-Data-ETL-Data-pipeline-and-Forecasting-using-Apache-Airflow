@@ -1,0 +1,36 @@
+[2025-03-31T16:49:38.253+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-31T16:49:38.275+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: forecast_sales_dag.forecast_aggregate_sales manual__2025-03-31T16:49:34.395883+00:00 [queued]>
+[2025-03-31T16:49:38.288+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: forecast_sales_dag.forecast_aggregate_sales manual__2025-03-31T16:49:34.395883+00:00 [queued]>
+[2025-03-31T16:49:38.291+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2025-03-31T16:49:38.349+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): forecast_aggregate_sales> on 2025-03-31 16:49:34.395883+00:00
+[2025-03-31T16:49:38.360+0000] {standard_task_runner.py:72} INFO - Started process 6228 to run task
+[2025-03-31T16:49:38.364+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'forecast_sales_dag', 'forecast_aggregate_sales', 'manual__2025-03-31T16:49:34.395883+00:00', '--job-id', '325', '--raw', '--subdir', 'DAGS_FOLDER/forecast_etl.py', '--cfg-path', '/tmp/tmphm5n783m']
+[2025-03-31T16:49:38.367+0000] {standard_task_runner.py:105} INFO - Job 325: Subtask forecast_aggregate_sales
+[2025-03-31T16:49:38.449+0000] {task_command.py:467} INFO - Running <TaskInstance: forecast_sales_dag.forecast_aggregate_sales manual__2025-03-31T16:49:34.395883+00:00 [running]> on host 2eb76630dc09
+[2025-03-31T16:49:38.570+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='forecast_sales_dag' AIRFLOW_CTX_TASK_ID='forecast_aggregate_sales' AIRFLOW_CTX_EXECUTION_DATE='2025-03-31T16:49:34.395883+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-31T16:49:34.395883+00:00'
+[2025-03-31T16:49:38.573+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-31T16:49:38.575+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-31T16:49:38.578+0000] {logging_mixin.py:190} INFO - Current task name:forecast_aggregate_sales state:running start_date:2025-03-31 16:49:38.278510+00:00
+[2025-03-31T16:49:38.580+0000] {logging_mixin.py:190} INFO - Dag name:forecast_sales_dag and current dag run status:running
+[2025-03-31T16:49:38.582+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-03-31T16:49:38.645+0000] {forecaster.py:961} INFO - Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+[2025-03-31T16:49:38.667+0000] {filesystem.py:118} DEBUG - input tempfile: /tmp/tmpbos5z879/qb14hidv.json
+[2025-03-31T16:49:38.769+0000] {filesystem.py:118} DEBUG - input tempfile: /tmp/tmpbos5z879/wuzbg6q3.json
+[2025-03-31T16:49:38.772+0000] {model.py:2042} DEBUG - idx 0
+[2025-03-31T16:49:38.774+0000] {model.py:2043} DEBUG - running CmdStan, num_threads: None
+[2025-03-31T16:49:38.777+0000] {model.py:2055} DEBUG - CmdStan args: ['/home/***/.local/lib/python3.9/site-packages/prophet/stan_model/prophet_model.bin', 'random', 'seed=62799', 'data', 'file=/tmp/tmpbos5z879/qb14hidv.json', 'init=/tmp/tmpbos5z879/wuzbg6q3.json', 'output', 'file=/tmp/tmpbos5z879/prophet_modeligsdgmrh/prophet_model-20250331164938.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+[2025-03-31T16:49:38.779+0000] {logging_mixin.py:190} WARNING - 16:49:38 - cmdstanpy - INFO - Chain [1] start processing
+[2025-03-31T16:49:38.779+0000] {model.py:2058} INFO - Chain [1] start processing
+[2025-03-31T16:49:38.852+0000] {logging_mixin.py:190} WARNING - 16:49:38 - cmdstanpy - INFO - Chain [1] done processing
+[2025-03-31T16:49:38.851+0000] {model.py:2115} INFO - Chain [1] done processing
+[2025-03-31T16:49:39.290+0000] {logging_mixin.py:190} INFO - Aggregate sales forecast completed and results saved.
+[2025-03-31T16:49:39.292+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-03-31T16:49:39.307+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-03-31T16:49:39.310+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=forecast_sales_dag, task_id=forecast_aggregate_sales, run_id=manual__2025-03-31T16:49:34.395883+00:00, execution_date=20250331T164934, start_date=20250331T164938, end_date=20250331T164939
+[2025-03-31T16:49:39.342+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-03-31T16:49:39.345+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-03-31T16:49:39.347+0000] {logging_mixin.py:190} INFO - Dag name:forecast_sales_dag queued_at:2025-03-31 16:49:34.413442+00:00
+[2025-03-31T16:49:39.349+0000] {logging_mixin.py:190} INFO - Task hostname:2eb76630dc09 operator:PythonOperator
+[2025-03-31T16:49:39.382+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-31T16:49:39.404+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-03-31T16:49:39.427+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

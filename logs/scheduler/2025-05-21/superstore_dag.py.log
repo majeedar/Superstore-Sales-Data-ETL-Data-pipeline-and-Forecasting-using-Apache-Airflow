@@ -1,0 +1,770 @@
+[2025-05-21T20:24:55.588+0000] {processor.py:186} INFO - Started process (PID=71) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:24:55.589+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:24:55.594+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:24:55.593+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:24:55.640+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:24:55.710+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:24:55.709+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:24:55.743+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:24:55.743+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:24:55.808+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.227 seconds
+[2025-05-21T20:25:26.448+0000] {processor.py:186} INFO - Started process (PID=144) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:25:26.450+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:25:26.453+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:25:26.452+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:25:26.497+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:25:26.527+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:25:26.527+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:25:26.561+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:25:26.560+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:25:26.611+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.172 seconds
+[2025-05-21T20:25:57.467+0000] {processor.py:186} INFO - Started process (PID=216) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:25:57.469+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:25:57.472+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:25:57.471+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:25:57.510+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:25:57.541+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:25:57.541+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:25:57.561+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:25:57.561+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:25:57.612+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.154 seconds
+[2025-05-21T20:26:28.431+0000] {processor.py:186} INFO - Started process (PID=288) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:26:28.432+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:26:28.437+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:26:28.435+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:26:28.474+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:26:28.510+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:26:28.509+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:26:28.536+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:26:28.536+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:26:28.591+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.167 seconds
+[2025-05-21T20:26:59.263+0000] {processor.py:186} INFO - Started process (PID=360) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:26:59.265+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:26:59.268+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:26:59.268+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:26:59.298+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:26:59.329+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:26:59.329+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:26:59.347+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:26:59.347+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:26:59.392+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.139 seconds
+[2025-05-21T20:27:30.235+0000] {processor.py:186} INFO - Started process (PID=432) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:27:30.237+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:27:30.241+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:27:30.241+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:27:30.269+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:27:30.299+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:27:30.299+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:27:30.323+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:27:30.322+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:27:30.393+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.169 seconds
+[2025-05-21T20:28:00.863+0000] {processor.py:186} INFO - Started process (PID=504) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:28:00.865+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:28:00.870+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:28:00.869+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:28:00.908+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:28:00.943+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:28:00.943+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:28:00.968+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:28:00.967+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:28:01.020+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.168 seconds
+[2025-05-21T20:28:31.144+0000] {processor.py:186} INFO - Started process (PID=576) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:28:31.145+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:28:31.149+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:28:31.148+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:28:31.183+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:28:31.208+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:28:31.208+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:28:31.226+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:28:31.226+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:28:31.274+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.139 seconds
+[2025-05-21T20:29:01.389+0000] {processor.py:186} INFO - Started process (PID=648) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:29:01.391+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:29:01.394+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:29:01.393+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:29:01.430+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:29:01.456+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:29:01.456+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:29:01.475+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:29:01.475+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:29:01.521+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.141 seconds
+[2025-05-21T20:29:32.531+0000] {processor.py:186} INFO - Started process (PID=720) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:29:32.533+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:29:32.536+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:29:32.536+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:29:32.572+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:29:32.601+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:29:32.600+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:29:32.630+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:29:32.629+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:29:32.688+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.164 seconds
+[2025-05-21T20:30:03.515+0000] {processor.py:186} INFO - Started process (PID=792) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:30:03.517+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:30:03.520+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:30:03.519+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:30:03.557+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:30:03.585+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:30:03.585+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:30:03.606+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:30:03.606+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:30:03.654+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.145 seconds
+[2025-05-21T20:30:33.929+0000] {processor.py:186} INFO - Started process (PID=864) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:30:33.930+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:30:33.934+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:30:33.933+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:30:33.962+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:30:33.995+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:30:33.994+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:30:34.023+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:30:34.022+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:30:34.076+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.164 seconds
+[2025-05-21T20:31:04.295+0000] {processor.py:186} INFO - Started process (PID=936) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:31:04.297+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:31:04.303+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:31:04.302+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:31:04.339+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:31:04.371+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:31:04.370+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:31:04.390+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:31:04.389+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:31:04.440+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.154 seconds
+[2025-05-21T20:31:34.701+0000] {processor.py:186} INFO - Started process (PID=1008) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:31:34.705+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:31:34.711+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:31:34.710+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:31:34.768+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:31:34.813+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:31:34.813+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:31:34.856+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:31:34.856+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:31:34.926+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.249 seconds
+[2025-05-21T20:32:05.070+0000] {processor.py:186} INFO - Started process (PID=1080) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:32:05.072+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:32:05.075+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:32:05.075+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:32:05.098+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:32:05.127+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:32:05.126+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:32:05.145+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:32:05.145+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:32:05.192+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.131 seconds
+[2025-05-21T20:32:35.566+0000] {processor.py:186} INFO - Started process (PID=1152) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:32:35.567+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:32:35.572+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:32:35.571+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:32:35.596+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:32:35.626+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:32:35.626+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:32:35.646+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:32:35.646+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:32:35.694+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.137 seconds
+[2025-05-21T20:33:06.032+0000] {processor.py:186} INFO - Started process (PID=1224) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:33:06.036+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:33:06.041+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:33:06.040+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:33:06.084+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:33:06.134+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:33:06.133+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:33:06.164+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:33:06.163+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:33:06.226+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.205 seconds
+[2025-05-21T20:33:36.742+0000] {processor.py:186} INFO - Started process (PID=1296) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:33:36.744+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:33:36.749+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:33:36.748+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:33:36.776+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:33:36.805+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:33:36.805+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:33:36.827+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:33:36.826+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:33:36.876+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.143 seconds
+[2025-05-21T20:34:07.376+0000] {processor.py:186} INFO - Started process (PID=1368) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:34:07.378+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:34:07.385+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:34:07.384+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:34:07.419+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:34:07.460+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:34:07.460+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:34:07.490+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:34:07.489+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:34:07.550+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.185 seconds
+[2025-05-21T20:34:37.995+0000] {processor.py:186} INFO - Started process (PID=1440) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:34:37.999+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:34:38.004+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:34:38.004+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:34:38.042+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:34:38.082+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:34:38.081+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:34:38.108+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:34:38.108+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:34:38.168+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.183 seconds
+[2025-05-21T20:35:08.291+0000] {processor.py:186} INFO - Started process (PID=1512) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:35:08.292+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:35:08.298+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:35:08.297+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:35:08.331+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:35:08.366+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:35:08.365+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:35:08.390+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:35:08.389+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:35:08.443+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.162 seconds
+[2025-05-21T20:35:39.055+0000] {processor.py:186} INFO - Started process (PID=1584) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:35:39.057+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:35:39.060+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:35:39.060+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:35:39.104+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:35:39.138+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:35:39.137+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:35:39.160+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:35:39.160+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:35:39.212+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.170 seconds
+[2025-05-21T20:36:09.436+0000] {processor.py:186} INFO - Started process (PID=1656) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:36:09.439+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:36:09.443+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:36:09.442+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:36:09.489+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:36:09.537+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:36:09.537+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:36:09.571+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:36:09.570+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:36:09.636+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.214 seconds
+[2025-05-21T20:36:40.095+0000] {processor.py:186} INFO - Started process (PID=1728) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:36:40.098+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:36:40.103+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:36:40.102+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:36:40.131+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:36:40.173+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:36:40.172+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:36:40.206+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:36:40.206+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:36:40.261+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.174 seconds
+[2025-05-21T20:37:10.553+0000] {processor.py:186} INFO - Started process (PID=1792) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:37:10.555+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:37:10.558+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:37:10.558+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:37:10.587+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:37:10.617+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:37:10.616+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:37:10.638+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:37:10.637+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:37:10.696+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.153 seconds
+[2025-05-21T20:37:41.542+0000] {processor.py:186} INFO - Started process (PID=1863) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:37:41.544+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:37:41.548+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:37:41.547+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:37:41.573+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:37:41.600+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:37:41.600+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:37:41.625+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:37:41.624+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:37:41.700+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.169 seconds
+[2025-05-21T20:38:12.487+0000] {processor.py:186} INFO - Started process (PID=1935) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:38:12.488+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:38:12.490+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:38:12.490+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:38:12.515+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:38:12.541+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:38:12.541+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:38:12.561+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:38:12.561+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:38:12.609+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.129 seconds
+[2025-05-21T20:38:43.298+0000] {processor.py:186} INFO - Started process (PID=2007) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:38:43.300+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:38:43.306+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:38:43.305+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:38:43.349+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:38:43.403+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:38:43.402+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:38:43.435+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:38:43.435+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:38:43.678+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.395 seconds
+[2025-05-21T20:39:14.011+0000] {processor.py:186} INFO - Started process (PID=2079) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:39:14.013+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:39:14.016+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:39:14.015+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:39:14.045+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:39:14.073+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:39:14.072+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:39:14.091+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:39:14.091+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:39:14.138+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.135 seconds
+[2025-05-21T20:39:44.289+0000] {processor.py:186} INFO - Started process (PID=2151) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:39:44.292+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:39:44.299+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:39:44.298+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:39:44.357+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:39:44.411+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:39:44.410+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:39:44.430+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:39:44.429+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:39:44.478+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.208 seconds
+[2025-05-21T20:40:14.776+0000] {processor.py:186} INFO - Started process (PID=2223) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:40:14.778+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:40:14.781+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:40:14.780+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:40:14.811+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:40:14.842+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:40:14.841+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:40:14.862+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:40:14.862+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:40:14.916+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.151 seconds
+[2025-05-21T20:40:45.417+0000] {processor.py:186} INFO - Started process (PID=2295) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:40:45.419+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:40:45.424+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:40:45.423+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:40:45.519+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:40:45.551+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:40:45.551+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:40:45.569+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:40:45.569+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:40:45.619+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.213 seconds
+[2025-05-21T20:41:15.895+0000] {processor.py:186} INFO - Started process (PID=2367) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:41:15.897+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:41:15.902+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:41:15.902+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:41:15.936+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:41:15.969+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:41:15.968+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:41:15.992+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:41:15.991+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:41:16.040+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.159 seconds
+[2025-05-21T20:41:46.288+0000] {processor.py:186} INFO - Started process (PID=2439) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:41:46.291+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:41:46.295+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:41:46.294+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:41:46.334+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:41:46.366+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:41:46.365+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:41:46.386+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:41:46.386+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:41:46.439+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.160 seconds
+[2025-05-21T20:42:17.254+0000] {processor.py:186} INFO - Started process (PID=2511) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:42:17.256+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:42:17.260+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:42:17.259+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:42:17.311+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:42:17.342+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:42:17.342+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:42:17.364+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:42:17.364+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:42:17.419+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.173 seconds
+[2025-05-21T20:42:48.370+0000] {processor.py:186} INFO - Started process (PID=2583) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:42:48.372+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:42:48.375+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:42:48.375+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:42:48.406+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:42:48.442+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:42:48.441+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:42:48.462+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:42:48.462+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:42:48.511+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.152 seconds
+[2025-05-21T20:43:19.403+0000] {processor.py:186} INFO - Started process (PID=2655) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:43:19.405+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:43:19.410+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:43:19.410+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:43:19.440+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:43:19.472+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:43:19.472+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:43:19.495+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:43:19.495+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:43:19.547+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.157 seconds
+[2025-05-21T20:43:50.225+0000] {processor.py:186} INFO - Started process (PID=2727) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:43:50.227+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:43:50.233+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:43:50.233+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:43:50.282+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:43:50.329+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:43:50.328+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:43:50.360+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:43:50.360+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:43:50.438+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.234 seconds
+[2025-05-21T20:44:20.898+0000] {processor.py:186} INFO - Started process (PID=2799) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:44:20.899+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:44:20.903+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:44:20.902+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:44:20.923+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:44:20.950+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:44:20.950+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:44:20.971+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:44:20.970+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:44:21.025+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.136 seconds
+[2025-05-21T20:44:51.543+0000] {processor.py:186} INFO - Started process (PID=2871) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:44:51.545+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:44:51.549+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:44:51.548+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:44:51.577+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:44:51.606+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:44:51.606+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:44:51.625+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:44:51.625+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:44:51.690+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.159 seconds
+[2025-05-21T20:45:21.957+0000] {processor.py:186} INFO - Started process (PID=2943) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:45:21.959+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:45:21.962+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:45:21.962+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:45:21.990+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:45:22.017+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:45:22.017+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:45:22.040+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:45:22.039+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:45:22.087+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.146 seconds
+[2025-05-21T20:45:52.465+0000] {processor.py:186} INFO - Started process (PID=3015) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:45:52.466+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:45:52.470+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:45:52.470+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:45:52.515+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:45:52.550+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:45:52.549+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:45:52.569+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:45:52.569+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:45:52.621+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.166 seconds
+[2025-05-21T20:46:23.606+0000] {processor.py:186} INFO - Started process (PID=3087) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:46:23.608+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:46:23.612+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:46:23.611+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:46:23.640+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:46:23.671+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:46:23.671+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:46:23.690+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:46:23.689+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:46:23.739+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.144 seconds
+[2025-05-21T20:46:53.818+0000] {processor.py:186} INFO - Started process (PID=3159) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:46:53.820+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:46:53.823+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:46:53.822+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:46:53.844+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:46:53.872+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:46:53.872+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:46:53.892+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:46:53.892+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:46:53.955+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.147 seconds
+[2025-05-21T20:47:24.082+0000] {processor.py:186} INFO - Started process (PID=3231) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:47:24.084+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:47:24.088+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:47:24.087+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:47:24.115+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:47:24.143+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:47:24.143+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:47:24.161+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:47:24.160+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:47:24.208+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.136 seconds
+[2025-05-21T20:47:54.559+0000] {processor.py:186} INFO - Started process (PID=3303) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:47:54.560+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:47:54.563+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:47:54.563+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:47:54.594+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:47:54.623+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:47:54.623+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:47:54.643+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:47:54.643+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:47:54.692+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.145 seconds
+[2025-05-21T20:48:24.943+0000] {processor.py:186} INFO - Started process (PID=3375) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:48:24.944+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:48:24.947+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:48:24.946+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:48:24.979+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:48:25.016+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:48:25.015+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:48:25.049+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:48:25.049+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:48:25.141+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.208 seconds
+[2025-05-21T20:48:55.454+0000] {processor.py:186} INFO - Started process (PID=3447) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:48:55.456+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:48:55.460+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:48:55.459+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:48:55.494+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:48:55.531+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:48:55.531+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:48:55.560+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:48:55.560+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:48:55.689+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.249 seconds
+[2025-05-21T20:49:25.970+0000] {processor.py:186} INFO - Started process (PID=3519) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:49:25.971+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:49:25.975+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:49:25.974+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:49:26.005+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:49:26.035+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:49:26.035+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:49:26.053+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:49:26.053+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:49:26.099+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.138 seconds
+[2025-05-21T20:49:56.270+0000] {processor.py:186} INFO - Started process (PID=3591) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:49:56.271+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:49:56.275+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:49:56.274+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:49:56.305+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:49:56.334+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:49:56.333+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:49:56.353+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:49:56.352+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:49:56.396+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.138 seconds
+[2025-05-21T20:50:26.604+0000] {processor.py:186} INFO - Started process (PID=3663) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:50:26.605+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:50:26.608+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:50:26.608+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:50:26.637+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:50:26.668+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:50:26.668+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:50:26.689+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:50:26.689+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:50:26.737+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.141 seconds
+[2025-05-21T20:50:56.985+0000] {processor.py:186} INFO - Started process (PID=3726) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:50:56.987+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:50:56.990+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:50:56.989+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:50:57.014+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:50:57.047+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:50:57.047+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:50:57.069+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:50:57.068+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:50:57.111+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.136 seconds
+[2025-05-21T20:51:27.674+0000] {processor.py:186} INFO - Started process (PID=3798) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:51:27.675+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:51:27.680+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:51:27.679+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:51:27.725+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:51:27.754+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:51:27.754+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:51:27.777+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:51:27.777+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:51:27.840+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.179 seconds
+[2025-05-21T20:51:58.517+0000] {processor.py:186} INFO - Started process (PID=3870) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:51:58.518+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:51:58.522+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:51:58.522+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:51:58.560+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:51:58.594+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:51:58.593+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:51:58.617+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:51:58.617+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:51:58.684+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.181 seconds
+[2025-05-21T20:52:28.819+0000] {processor.py:186} INFO - Started process (PID=3948) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:52:28.821+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:52:28.828+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:52:28.827+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:52:28.858+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:52:28.898+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:52:28.897+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:52:28.919+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:52:28.918+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:52:28.969+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.166 seconds
+[2025-05-21T20:52:59.338+0000] {processor.py:186} INFO - Started process (PID=4020) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:52:59.340+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:52:59.345+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:52:59.344+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:52:59.386+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:52:59.437+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:52:59.436+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:52:59.477+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:52:59.477+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:52:59.544+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.221 seconds
+[2025-05-21T20:53:30.079+0000] {processor.py:186} INFO - Started process (PID=4092) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:53:30.081+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:53:30.084+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:53:30.084+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:53:30.109+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:53:30.141+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:53:30.141+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:53:30.167+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:53:30.166+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:53:30.224+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.155 seconds
+[2025-05-21T20:54:00.743+0000] {processor.py:186} INFO - Started process (PID=4164) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:54:00.745+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:54:00.748+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:54:00.748+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:54:00.775+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:54:00.803+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:54:00.802+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:54:00.824+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:54:00.823+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:54:00.874+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.141 seconds
+[2025-05-21T20:54:31.292+0000] {processor.py:186} INFO - Started process (PID=4236) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:54:31.294+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:54:31.297+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:54:31.297+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:54:31.324+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:54:31.355+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:54:31.355+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:54:31.376+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:54:31.376+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:54:31.423+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.142 seconds
+[2025-05-21T20:55:01.559+0000] {processor.py:186} INFO - Started process (PID=4308) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:55:01.561+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:55:01.565+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:55:01.565+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:55:01.593+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:55:01.620+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:55:01.620+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:55:01.644+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:55:01.644+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:55:01.700+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.152 seconds
+[2025-05-21T20:55:32.059+0000] {processor.py:186} INFO - Started process (PID=4380) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:55:32.061+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:55:32.066+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:55:32.065+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:55:32.089+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:55:32.119+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:55:32.118+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:55:32.140+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:55:32.140+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:55:32.188+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.144 seconds
+[2025-05-21T20:56:02.413+0000] {processor.py:186} INFO - Started process (PID=4452) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:56:02.415+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:56:02.420+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:56:02.419+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:56:02.452+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:56:02.488+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:56:02.488+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:56:02.515+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:56:02.515+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:56:02.567+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.167 seconds
+[2025-05-21T20:56:32.924+0000] {processor.py:186} INFO - Started process (PID=4524) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:56:32.925+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:56:32.929+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:56:32.929+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:56:32.955+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:56:32.986+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:56:32.986+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:56:33.007+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:56:33.007+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:56:33.057+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.143 seconds
+[2025-05-21T20:57:03.743+0000] {processor.py:186} INFO - Started process (PID=4596) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:57:03.745+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:57:03.750+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:57:03.749+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:57:03.777+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:57:03.805+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:57:03.804+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:57:03.824+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:57:03.824+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:57:03.894+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.162 seconds
+[2025-05-21T20:57:34.352+0000] {processor.py:186} INFO - Started process (PID=4668) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:57:34.355+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:57:34.360+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:57:34.360+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:57:34.402+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:57:34.433+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:57:34.433+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:57:34.453+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:57:34.453+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:57:34.520+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.185 seconds
+[2025-05-21T20:58:05.055+0000] {processor.py:186} INFO - Started process (PID=4740) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:58:05.057+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:58:05.066+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:58:05.064+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:58:05.145+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:58:05.235+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:58:05.234+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:58:05.283+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:58:05.282+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:58:05.345+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.305 seconds
+[2025-05-21T20:58:35.725+0000] {processor.py:186} INFO - Started process (PID=4812) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:58:35.729+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:58:35.739+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:58:35.738+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:58:35.798+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:58:35.839+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:58:35.838+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:58:35.869+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:58:35.868+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:58:35.943+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.240 seconds
+[2025-05-21T20:59:06.501+0000] {processor.py:186} INFO - Started process (PID=4884) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:59:06.503+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:59:06.508+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:59:06.507+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:59:06.534+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:59:06.567+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:59:06.567+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:59:06.595+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:59:06.595+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:59:06.639+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.147 seconds
+[2025-05-21T20:59:37.166+0000] {processor.py:186} INFO - Started process (PID=4956) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:59:37.168+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T20:59:37.173+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:59:37.172+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:59:37.204+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T20:59:37.236+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:59:37.236+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T20:59:37.253+0000] {logging_mixin.py:190} INFO - [2025-05-21T20:59:37.252+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T20:59:37.299+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.146 seconds
+[2025-05-21T21:00:08.067+0000] {processor.py:186} INFO - Started process (PID=5028) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:00:08.068+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T21:00:08.072+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:00:08.071+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:00:08.102+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:00:08.136+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:00:08.136+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T21:00:08.166+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:00:08.166+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T21:00:08.214+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.157 seconds
+[2025-05-21T21:00:38.313+0000] {processor.py:186} INFO - Started process (PID=5100) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:00:38.316+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T21:00:38.322+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:00:38.321+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:00:38.369+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:00:38.422+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:00:38.422+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T21:00:38.442+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:00:38.442+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T21:00:38.483+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.188 seconds
+[2025-05-21T21:01:08.747+0000] {processor.py:186} INFO - Started process (PID=5172) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:01:08.749+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T21:01:08.754+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:01:08.753+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:01:08.795+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:01:08.826+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:01:08.826+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T21:01:08.850+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:01:08.849+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T21:01:08.901+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.190 seconds
+[2025-05-21T21:01:39.649+0000] {processor.py:186} INFO - Started process (PID=5244) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:01:39.650+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T21:01:39.653+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:01:39.653+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:01:39.689+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:01:39.721+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:01:39.720+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T21:01:39.740+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:01:39.739+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T21:01:39.809+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.170 seconds
+[2025-05-21T21:02:10.189+0000] {processor.py:186} INFO - Started process (PID=5316) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:02:10.193+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T21:02:10.200+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:02:10.199+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:02:10.263+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:02:10.333+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:02:10.332+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T21:02:10.365+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:02:10.365+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T21:02:10.433+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.268 seconds
+[2025-05-21T21:02:40.630+0000] {processor.py:186} INFO - Started process (PID=5389) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:02:40.631+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T21:02:40.636+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:02:40.635+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:02:40.673+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:02:40.702+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:02:40.702+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T21:02:40.728+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:02:40.727+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T21:02:40.792+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.174 seconds
+[2025-05-21T21:03:11.124+0000] {processor.py:186} INFO - Started process (PID=5461) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:03:11.127+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T21:03:11.135+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:03:11.134+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:03:11.204+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:03:11.249+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:03:11.249+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T21:03:11.274+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:03:11.273+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T21:03:11.332+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.232 seconds
+[2025-05-21T21:03:41.555+0000] {processor.py:186} INFO - Started process (PID=5533) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:03:41.559+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T21:03:41.567+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:03:41.566+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:03:41.619+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:03:41.654+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:03:41.653+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T21:03:41.679+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:03:41.678+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T21:03:41.730+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.200 seconds
+[2025-05-21T21:04:12.260+0000] {processor.py:186} INFO - Started process (PID=5597) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:04:12.262+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T21:04:12.266+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:04:12.265+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:04:12.289+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:04:12.318+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:04:12.318+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T21:04:12.336+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:04:12.335+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T21:04:12.383+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.135 seconds
+[2025-05-21T21:04:42.460+0000] {processor.py:186} INFO - Started process (PID=5668) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:04:42.461+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T21:04:42.464+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:04:42.464+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:04:42.494+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:04:42.521+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:04:42.521+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T21:04:42.538+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:04:42.538+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T21:04:42.625+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.175 seconds
+[2025-05-21T21:05:13.032+0000] {processor.py:186} INFO - Started process (PID=5739) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:05:13.036+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T21:05:13.044+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:05:13.043+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:05:13.111+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:05:13.154+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:05:13.154+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T21:05:13.172+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:05:13.171+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T21:05:13.217+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.212 seconds
+[2025-05-21T21:05:43.504+0000] {processor.py:186} INFO - Started process (PID=5811) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:05:43.508+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T21:05:43.514+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:05:43.513+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:05:43.549+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:05:43.582+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:05:43.582+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T21:05:43.608+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:05:43.607+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T21:05:43.659+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.178 seconds
+[2025-05-21T21:06:14.106+0000] {processor.py:186} INFO - Started process (PID=5883) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:06:14.108+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T21:06:14.111+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:06:14.111+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:06:14.140+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:06:14.165+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:06:14.165+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T21:06:14.185+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:06:14.185+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T21:06:14.238+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.144 seconds
+[2025-05-21T21:06:44.556+0000] {processor.py:186} INFO - Started process (PID=5955) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:06:44.558+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T21:06:44.562+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:06:44.561+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:06:44.586+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:06:44.614+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:06:44.613+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T21:06:44.636+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:06:44.636+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T21:06:44.680+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.136 seconds
+[2025-05-21T21:07:14.935+0000] {processor.py:186} INFO - Started process (PID=6027) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:07:14.937+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T21:07:14.941+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:07:14.940+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:07:14.962+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:07:14.992+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:07:14.991+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T21:07:15.017+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:07:15.017+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T21:07:15.070+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.147 seconds
+[2025-05-21T21:07:45.653+0000] {processor.py:186} INFO - Started process (PID=6098) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:07:45.655+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T21:07:45.659+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:07:45.658+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:07:45.693+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:07:45.723+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:07:45.723+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T21:07:45.743+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:07:45.743+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T21:07:45.793+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.149 seconds
+[2025-05-21T21:08:16.001+0000] {processor.py:186} INFO - Started process (PID=6170) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:08:16.003+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T21:08:16.008+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:08:16.007+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:08:16.035+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:08:16.070+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:08:16.070+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T21:08:16.092+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:08:16.092+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T21:08:16.141+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.151 seconds
+[2025-05-21T21:08:46.419+0000] {processor.py:186} INFO - Started process (PID=6242) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:08:46.421+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T21:08:46.425+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:08:46.424+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:08:46.454+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:08:46.494+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:08:46.493+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T21:08:46.517+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:08:46.516+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T21:08:46.569+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.162 seconds
+[2025-05-21T21:09:17.226+0000] {processor.py:186} INFO - Started process (PID=6313) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:09:17.228+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T21:09:17.232+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:09:17.231+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:09:17.264+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:09:17.295+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:09:17.294+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T21:09:17.311+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:09:17.310+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T21:09:17.358+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.143 seconds
+[2025-05-21T21:09:48.095+0000] {processor.py:186} INFO - Started process (PID=6385) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:09:48.097+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T21:09:48.101+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:09:48.101+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:09:48.139+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:09:48.181+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:09:48.181+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T21:09:48.213+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:09:48.213+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T21:09:48.334+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.251 seconds
+[2025-05-21T21:10:19.370+0000] {processor.py:186} INFO - Started process (PID=6457) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:10:19.371+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T21:10:19.375+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:10:19.374+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:10:19.401+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:10:19.431+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:10:19.430+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T21:10:19.454+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:10:19.453+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T21:10:19.522+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.164 seconds
+[2025-05-21T21:10:49.836+0000] {processor.py:186} INFO - Started process (PID=6529) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:10:49.838+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T21:10:49.841+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:10:49.841+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:10:49.868+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:10:49.895+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:10:49.895+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T21:10:49.913+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:10:49.913+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T21:10:49.978+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.150 seconds
+[2025-05-21T21:11:20.148+0000] {processor.py:186} INFO - Started process (PID=6601) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:11:20.152+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T21:11:20.163+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:11:20.161+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:11:20.200+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:11:20.244+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:11:20.243+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T21:11:20.273+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:11:20.272+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T21:11:20.329+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.207 seconds
+[2025-05-21T21:11:51.307+0000] {processor.py:186} INFO - Started process (PID=6673) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:11:51.309+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T21:11:51.313+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:11:51.312+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:11:51.340+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:11:51.369+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:11:51.368+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T21:11:51.386+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:11:51.386+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T21:11:51.444+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.151 seconds
+[2025-05-21T21:12:21.559+0000] {processor.py:186} INFO - Started process (PID=6745) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:12:21.561+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T21:12:21.567+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:12:21.566+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:12:21.600+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:12:21.633+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:12:21.633+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T21:12:21.660+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:12:21.660+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T21:12:21.711+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.163 seconds
+[2025-05-21T21:12:51.919+0000] {processor.py:186} INFO - Started process (PID=6817) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:12:51.923+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T21:12:51.932+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:12:51.931+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:12:51.996+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:12:52.056+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:12:52.056+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T21:12:52.093+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:12:52.092+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T21:12:52.153+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.262 seconds
+[2025-05-21T21:13:23.129+0000] {processor.py:186} INFO - Started process (PID=6889) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:13:23.130+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T21:13:23.133+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:13:23.133+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:13:23.163+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:13:23.193+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:13:23.193+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T21:13:23.209+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:13:23.209+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T21:13:23.256+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.136 seconds
+[2025-05-21T21:13:54.067+0000] {processor.py:186} INFO - Started process (PID=6961) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:13:54.068+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T21:13:54.072+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:13:54.071+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:13:54.098+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:13:54.125+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:13:54.124+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T21:13:54.146+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:13:54.145+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T21:13:54.191+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.134 seconds
+[2025-05-21T21:14:24.611+0000] {processor.py:186} INFO - Started process (PID=7033) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:14:24.612+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T21:14:24.615+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:14:24.615+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:14:24.640+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:14:24.668+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:14:24.668+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T21:14:24.686+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:14:24.685+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T21:14:24.731+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.130 seconds
+[2025-05-21T21:14:55.030+0000] {processor.py:186} INFO - Started process (PID=7105) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:14:55.032+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T21:14:55.039+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:14:55.038+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:14:55.069+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:14:55.099+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:14:55.099+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T21:14:55.119+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:14:55.119+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T21:14:55.166+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.152 seconds
+[2025-05-21T21:15:25.769+0000] {processor.py:186} INFO - Started process (PID=7177) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:15:25.771+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T21:15:25.778+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:15:25.777+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:15:25.818+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:15:25.861+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:15:25.860+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T21:15:25.891+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:15:25.890+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T21:15:25.952+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.205 seconds
+[2025-05-21T21:15:56.112+0000] {processor.py:186} INFO - Started process (PID=7249) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:15:56.114+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T21:15:56.119+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:15:56.118+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:15:56.154+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:15:56.198+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:15:56.197+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T21:15:56.224+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:15:56.223+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T21:15:56.289+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.193 seconds
+[2025-05-21T21:16:26.600+0000] {processor.py:186} INFO - Started process (PID=7321) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:16:26.603+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T21:16:26.607+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:16:26.606+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:16:26.639+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:16:26.677+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:16:26.677+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T21:16:26.706+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:16:26.705+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T21:16:26.759+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.176 seconds
+[2025-05-21T21:16:57.321+0000] {processor.py:186} INFO - Started process (PID=7393) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:16:57.324+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T21:16:57.334+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:16:57.332+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:16:57.380+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:16:57.425+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:16:57.424+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T21:16:57.463+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:16:57.463+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T21:16:57.517+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.224 seconds
+[2025-05-21T21:17:27.860+0000] {processor.py:186} INFO - Started process (PID=7465) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:17:27.862+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T21:17:27.866+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:17:27.865+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:17:27.899+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:17:27.937+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:17:27.937+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T21:17:27.957+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:17:27.957+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T21:17:28.004+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.158 seconds
+[2025-05-21T21:17:58.216+0000] {processor.py:186} INFO - Started process (PID=7529) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:17:58.217+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T21:17:58.221+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:17:58.220+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:17:58.245+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:17:58.272+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:17:58.272+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T21:17:58.290+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:17:58.289+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T21:17:58.335+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.132 seconds
+[2025-05-21T21:18:28.451+0000] {processor.py:186} INFO - Started process (PID=7600) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:18:28.452+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T21:18:28.456+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:18:28.455+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:18:28.487+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:18:28.519+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:18:28.519+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T21:18:28.537+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:18:28.536+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T21:18:28.598+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.157 seconds
+[2025-05-21T21:18:59.187+0000] {processor.py:186} INFO - Started process (PID=7672) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:18:59.188+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T21:18:59.193+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:18:59.192+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:18:59.222+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:18:59.252+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:18:59.252+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T21:18:59.273+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:18:59.273+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T21:18:59.327+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.150 seconds
+[2025-05-21T21:19:29.790+0000] {processor.py:186} INFO - Started process (PID=7744) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:19:29.791+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T21:19:29.795+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:19:29.794+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:19:29.826+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:19:29.852+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:19:29.852+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T21:19:29.872+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:19:29.872+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T21:19:29.939+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.161 seconds
+[2025-05-21T21:20:00.733+0000] {processor.py:186} INFO - Started process (PID=7816) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:20:00.734+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T21:20:00.738+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:20:00.738+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:20:00.766+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:20:00.791+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:20:00.791+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T21:20:00.809+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:20:00.809+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T21:20:00.853+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.131 seconds
+[2025-05-21T21:20:31.190+0000] {processor.py:186} INFO - Started process (PID=7888) to work on /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:20:31.192+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/superstore_dag.py for tasks to queue
+[2025-05-21T21:20:31.197+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:20:31.196+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:20:31.228+0000] {processor.py:925} INFO - DAG(s) 'superstore_dag' retrieved from /opt/airflow/dags/superstore_dag.py
+[2025-05-21T21:20:31.260+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:20:31.260+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-21T21:20:31.280+0000] {logging_mixin.py:190} INFO - [2025-05-21T21:20:31.280+0000] {dag.py:4180} INFO - Setting next_dagrun for superstore_dag to None, run_after=None
+[2025-05-21T21:20:31.359+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/superstore_dag.py took 0.179 seconds

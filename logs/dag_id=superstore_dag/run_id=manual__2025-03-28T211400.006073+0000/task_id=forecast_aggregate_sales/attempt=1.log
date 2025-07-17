@@ -1,0 +1,116 @@
+[2025-03-28T21:14:37.147+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-28T21:14:37.197+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: superstore_dag.forecast_aggregate_sales manual__2025-03-28T21:14:00.006073+00:00 [queued]>
+[2025-03-28T21:14:37.227+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: superstore_dag.forecast_aggregate_sales manual__2025-03-28T21:14:00.006073+00:00 [queued]>
+[2025-03-28T21:14:37.230+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2025-03-28T21:14:37.296+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): forecast_aggregate_sales> on 2025-03-28 21:14:00.006073+00:00
+[2025-03-28T21:14:37.316+0000] {standard_task_runner.py:72} INFO - Started process 5333 to run task
+[2025-03-28T21:14:37.327+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'superstore_dag', 'forecast_aggregate_sales', 'manual__2025-03-28T21:14:00.006073+00:00', '--job-id', '189', '--raw', '--subdir', 'DAGS_FOLDER/superstore_dag.py', '--cfg-path', '/tmp/tmpqt7cr0ns']
+[2025-03-28T21:14:37.330+0000] {standard_task_runner.py:105} INFO - Job 189: Subtask forecast_aggregate_sales
+[2025-03-28T21:14:37.498+0000] {task_command.py:467} INFO - Running <TaskInstance: superstore_dag.forecast_aggregate_sales manual__2025-03-28T21:14:00.006073+00:00 [running]> on host b7fc87b83960
+[2025-03-28T21:14:37.766+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='superstore_dag' AIRFLOW_CTX_TASK_ID='forecast_aggregate_sales' AIRFLOW_CTX_EXECUTION_DATE='2025-03-28T21:14:00.006073+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-28T21:14:00.006073+00:00'
+[2025-03-28T21:14:37.769+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-28T21:14:37.776+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-28T21:14:37.778+0000] {logging_mixin.py:190} INFO - Current task name:forecast_aggregate_sales state:running start_date:2025-03-28 21:14:37.206720+00:00
+[2025-03-28T21:14:37.779+0000] {logging_mixin.py:190} INFO - Dag name:superstore_dag and current dag run status:running
+[2025-03-28T21:14:37.790+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-03-28T21:14:37.959+0000] {forecaster.py:961} INFO - Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+[2025-03-28T21:14:38.029+0000] {filesystem.py:118} DEBUG - input tempfile: /tmp/tmpk_kbaqt8/jsu2t9ze.json
+[2025-03-28T21:14:38.246+0000] {filesystem.py:118} DEBUG - input tempfile: /tmp/tmpk_kbaqt8/e6slis8t.json
+[2025-03-28T21:14:38.249+0000] {model.py:2042} DEBUG - idx 0
+[2025-03-28T21:14:38.255+0000] {model.py:2043} DEBUG - running CmdStan, num_threads: None
+[2025-03-28T21:14:38.257+0000] {model.py:2055} DEBUG - CmdStan args: ['/home/***/.local/lib/python3.9/site-packages/prophet/stan_model/prophet_model.bin', 'random', 'seed=47218', 'data', 'file=/tmp/tmpk_kbaqt8/jsu2t9ze.json', 'init=/tmp/tmpk_kbaqt8/e6slis8t.json', 'output', 'file=/tmp/tmpk_kbaqt8/prophet_modelqd8niw99/prophet_model-20250328211438.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+[2025-03-28T21:14:38.259+0000] {logging_mixin.py:190} WARNING - 21:14:38 - cmdstanpy - INFO - Chain [1] start processing
+[2025-03-28T21:14:38.259+0000] {model.py:2058} INFO - Chain [1] start processing
+[2025-03-28T21:14:38.397+0000] {logging_mixin.py:190} WARNING - 21:14:38 - cmdstanpy - INFO - Chain [1] done processing
+[2025-03-28T21:14:38.396+0000] {model.py:2115} INFO - Chain [1] done processing
+[2025-03-28T21:14:38.948+0000] {taskinstance.py:3310} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/opt/airflow/dags/superstore_dag.py", line 210, in forecast_aggregate_sales
+    future_df = forecast_df[forecast_df['Order Date'] > last_past_date].copy()
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/core/ops/common.py", line 76, in new_method
+    return method(self, other)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/core/arraylike.py", line 56, in __gt__
+    return self._cmp_method(other, operator.gt)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/core/series.py", line 5803, in _cmp_method
+    res_values = ops.comparison_op(lvalues, rvalues, op)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/core/ops/array_ops.py", line 346, in comparison_op
+    res_values = comp_method_OBJECT_ARRAY(op, lvalues, rvalues)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/core/ops/array_ops.py", line 131, in comp_method_OBJECT_ARRAY
+    result = libops.scalar_compare(x.ravel(), y, op)
+  File "ops.pyx", line 107, in pandas._libs.ops.scalar_compare
+TypeError: '>' not supported between instances of 'datetime.date' and 'str'
+[2025-03-28T21:14:39.000+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-03-28T21:14:39.007+0000] {logging_mixin.py:190} INFO - Task start:2025-03-28 21:14:37.206720+00:00 end:2025-03-28 21:14:38.999506+00:00 duration:1.792786
+[2025-03-28T21:14:39.009+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): forecast_aggregate_sales> dag:<DAG: superstore_dag> dagrun:<DagRun superstore_dag @ 2025-03-28 21:14:00.006073+00:00: manual__2025-03-28T21:14:00.006073+00:00, state:running, queued_at: 2025-03-28 21:14:00.041165+00:00. externally triggered: True>
+[2025-03-28T21:14:39.010+0000] {logging_mixin.py:190} INFO - Failure caused by '>' not supported between instances of 'datetime.date' and 'str'
+[2025-03-28T21:14:39.017+0000] {taskinstance.py:1225} INFO - Marking task as UP_FOR_RETRY. dag_id=superstore_dag, task_id=forecast_aggregate_sales, run_id=manual__2025-03-28T21:14:00.006073+00:00, execution_date=20250328T211400, start_date=20250328T211437, end_date=20250328T211438
+[2025-03-28T21:14:39.098+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-03-28T21:14:39.100+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 189 for task forecast_aggregate_sales ('>' not supported between instances of 'datetime.date' and 'str'; 5333)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/cli.py", line 115, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 3004, in _run_raw_task
+    return _run_raw_task(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 3158, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 3182, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/opt/airflow/dags/superstore_dag.py", line 210, in forecast_aggregate_sales
+    future_df = forecast_df[forecast_df['Order Date'] > last_past_date].copy()
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/core/ops/common.py", line 76, in new_method
+    return method(self, other)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/core/arraylike.py", line 56, in __gt__
+    return self._cmp_method(other, operator.gt)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/core/series.py", line 5803, in _cmp_method
+    res_values = ops.comparison_op(lvalues, rvalues, op)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/core/ops/array_ops.py", line 346, in comparison_op
+    res_values = comp_method_OBJECT_ARRAY(op, lvalues, rvalues)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/core/ops/array_ops.py", line 131, in comp_method_OBJECT_ARRAY
+    result = libops.scalar_compare(x.ravel(), y, op)
+  File "ops.pyx", line 107, in pandas._libs.ops.scalar_compare
+TypeError: '>' not supported between instances of 'datetime.date' and 'str'
+[2025-03-28T21:14:39.166+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-03-28T21:14:39.239+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-28T21:14:39.267+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

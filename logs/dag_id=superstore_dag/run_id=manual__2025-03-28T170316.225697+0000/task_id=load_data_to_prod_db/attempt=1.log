@@ -1,0 +1,222 @@
+[2025-03-28T17:03:45.991+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-28T17:03:46.011+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: superstore_dag.load_data_to_prod_db manual__2025-03-28T17:03:16.225697+00:00 [queued]>
+[2025-03-28T17:03:46.023+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: superstore_dag.load_data_to_prod_db manual__2025-03-28T17:03:16.225697+00:00 [queued]>
+[2025-03-28T17:03:46.027+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2025-03-28T17:03:46.063+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): load_data_to_prod_db> on 2025-03-28 17:03:16.225697+00:00
+[2025-03-28T17:03:46.074+0000] {standard_task_runner.py:72} INFO - Started process 3422 to run task
+[2025-03-28T17:03:46.079+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'superstore_dag', 'load_data_to_prod_db', 'manual__2025-03-28T17:03:16.225697+00:00', '--job-id', '131', '--raw', '--subdir', 'DAGS_FOLDER/superstore_dag.py', '--cfg-path', '/tmp/tmp3w89y713']
+[2025-03-28T17:03:46.082+0000] {standard_task_runner.py:105} INFO - Job 131: Subtask load_data_to_prod_db
+[2025-03-28T17:03:46.156+0000] {task_command.py:467} INFO - Running <TaskInstance: superstore_dag.load_data_to_prod_db manual__2025-03-28T17:03:16.225697+00:00 [running]> on host b7fc87b83960
+[2025-03-28T17:03:46.294+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='superstore_dag' AIRFLOW_CTX_TASK_ID='load_data_to_prod_db' AIRFLOW_CTX_EXECUTION_DATE='2025-03-28T17:03:16.225697+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-28T17:03:16.225697+00:00'
+[2025-03-28T17:03:46.298+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-28T17:03:46.301+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-28T17:03:46.302+0000] {logging_mixin.py:190} INFO - Current task name:load_data_to_prod_db state:running start_date:2025-03-28 17:03:46.013058+00:00
+[2025-03-28T17:03:46.304+0000] {logging_mixin.py:190} INFO - Dag name:superstore_dag and current dag run status:running
+[2025-03-28T17:03:46.307+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-03-28T17:03:46.320+0000] {logging_mixin.py:190} INFO - Checking and potentially creating table: prod_fact_table
+[2025-03-28T17:03:46.335+0000] {base.py:84} INFO - Retrieving connection '***_default'
+[2025-03-28T17:03:46.373+0000] {sql.py:624} INFO - Running statement: 
+            IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'prod_fact_table')
+            BEGIN
+                CREATE TABLE prod_fact_table ([OrderID_SK] INT, [ProductID_SK] INT, [CustomerID_SK] INT, [LocationID_SK] INT, [DateID_SK] INT, [Sales] FLOAT, [Quantity] INT, [Discount] FLOAT, [Profit] FLOAT, [unit_price] FLOAT);
+                PRINT 'Table prod_fact_table created successfully.';
+            END
+            , parameters: None
+[2025-03-28T17:03:46.458+0000] {logging_mixin.py:190} INFO - Table prod_fact_table exists or was just created.
+[2025-03-28T17:03:46.476+0000] {logging_mixin.py:190} INFO - Checking and potentially creating table: prod_dim_product
+[2025-03-28T17:03:46.505+0000] {sql.py:624} INFO - Running statement: 
+            IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'prod_dim_product')
+            BEGIN
+                CREATE TABLE prod_dim_product ([Product ID] VARCHAR(MAX), [Category] VARCHAR(MAX), [Sub-Category] VARCHAR(MAX), [Product Name] VARCHAR(MAX), [ProductID_SK] INT);
+                PRINT 'Table prod_dim_product created successfully.';
+            END
+            , parameters: None
+[2025-03-28T17:03:46.598+0000] {logging_mixin.py:190} INFO - Table prod_dim_product exists or was just created.
+[2025-03-28T17:03:46.632+0000] {logging_mixin.py:190} INFO - Checking and potentially creating table: prod_dim_order
+[2025-03-28T17:03:46.673+0000] {sql.py:624} INFO - Running statement: 
+            IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'prod_dim_order')
+            BEGIN
+                CREATE TABLE prod_dim_order ([Order ID] VARCHAR(MAX), [Ship Date] VARCHAR(MAX), [Ship Mode] VARCHAR(MAX), [OrderID_SK] INT);
+                PRINT 'Table prod_dim_order created successfully.';
+            END
+            , parameters: None
+[2025-03-28T17:03:46.699+0000] {logging_mixin.py:190} INFO - Table prod_dim_order exists or was just created.
+[2025-03-28T17:03:46.711+0000] {logging_mixin.py:190} INFO - Checking and potentially creating table: prod_dim_customer
+[2025-03-28T17:03:46.738+0000] {sql.py:624} INFO - Running statement: 
+            IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'prod_dim_customer')
+            BEGIN
+                CREATE TABLE prod_dim_customer ([Customer ID] VARCHAR(MAX), [Customer Name] VARCHAR(MAX), [Segment] VARCHAR(MAX), [CustomerID_SK] INT);
+                PRINT 'Table prod_dim_customer created successfully.';
+            END
+            , parameters: None
+[2025-03-28T17:03:46.759+0000] {logging_mixin.py:190} INFO - Table prod_dim_customer exists or was just created.
+[2025-03-28T17:03:46.770+0000] {logging_mixin.py:190} INFO - Checking and potentially creating table: prod_dim_location
+[2025-03-28T17:03:46.799+0000] {sql.py:624} INFO - Running statement: 
+            IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'prod_dim_location')
+            BEGIN
+                CREATE TABLE prod_dim_location ([Postal Code] INT, [City] VARCHAR(MAX), [State] VARCHAR(MAX), [Country] VARCHAR(MAX), [Region] VARCHAR(MAX), [LocationID_SK] INT);
+                PRINT 'Table prod_dim_location created successfully.';
+            END
+            , parameters: None
+[2025-03-28T17:03:46.814+0000] {logging_mixin.py:190} INFO - Table prod_dim_location exists or was just created.
+[2025-03-28T17:03:46.825+0000] {logging_mixin.py:190} INFO - Checking and potentially creating table: prod_dim_date
+[2025-03-28T17:03:46.853+0000] {sql.py:624} INFO - Running statement: 
+            IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'prod_dim_date')
+            BEGIN
+                CREATE TABLE prod_dim_date ([Order Date] VARCHAR(MAX), [DateID_SK] INT, [Order Year] INT, [Order Month] INT, [Order Day] INT);
+                PRINT 'Table prod_dim_date created successfully.';
+            END
+            , parameters: None
+[2025-03-28T17:03:46.875+0000] {logging_mixin.py:190} INFO - Table prod_dim_date exists or was just created.
+[2025-03-28T17:03:46.903+0000] {logging_mixin.py:190} INFO - Checking and potentially creating table: forecast_past_future_sales
+[2025-03-28T17:03:46.935+0000] {sql.py:624} INFO - Running statement: 
+            IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'forecast_past_future_sales')
+            BEGIN
+                CREATE TABLE forecast_past_future_sales ([ds] VARCHAR(MAX), [y] FLOAT, [label] VARCHAR(MAX), [yhat] FLOAT);
+                PRINT 'Table forecast_past_future_sales created successfully.';
+            END
+            , parameters: None
+[2025-03-28T17:03:46.959+0000] {logging_mixin.py:190} INFO - Table forecast_past_future_sales exists or was just created.
+[2025-03-28T17:03:46.969+0000] {logging_mixin.py:190} INFO - Checking and potentially creating table: forecast_metrics
+[2025-03-28T17:03:46.992+0000] {sql.py:624} INFO - Running statement: 
+            IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'forecast_metrics')
+            BEGIN
+                CREATE TABLE forecast_metrics ([Metric] VARCHAR(MAX), [Value] FLOAT);
+                PRINT 'Table forecast_metrics created successfully.';
+            END
+            , parameters: None
+[2025-03-28T17:03:47.021+0000] {logging_mixin.py:190} INFO - Table forecast_metrics exists or was just created.
+[2025-03-28T17:03:47.042+0000] {logging_mixin.py:190} INFO - Truncating table: prod_fact_table
+[2025-03-28T17:03:47.067+0000] {sql.py:624} INFO - Running statement: TRUNCATE TABLE prod_fact_table, parameters: None
+[2025-03-28T17:03:47.082+0000] {logging_mixin.py:190} INFO - Loading 4000 rows into prod_fact_table
+[2025-03-28T17:03:49.168+0000] {sql.py:757} INFO - Loaded 1000 rows into prod_fact_table so far
+[2025-03-28T17:03:51.072+0000] {sql.py:757} INFO - Loaded 2000 rows into prod_fact_table so far
+[2025-03-28T17:03:52.940+0000] {sql.py:757} INFO - Loaded 3000 rows into prod_fact_table so far
+[2025-03-28T17:03:55.107+0000] {sql.py:757} INFO - Loaded 4000 rows into prod_fact_table so far
+[2025-03-28T17:03:55.112+0000] {sql.py:760} INFO - Done loading. Loaded a total of 4000 rows into prod_fact_table
+[2025-03-28T17:03:55.129+0000] {logging_mixin.py:190} INFO - Truncating table: prod_dim_product
+[2025-03-28T17:03:55.162+0000] {sql.py:624} INFO - Running statement: TRUNCATE TABLE prod_dim_product, parameters: None
+[2025-03-28T17:03:55.171+0000] {logging_mixin.py:190} INFO - Loading 1615 rows into prod_dim_product
+[2025-03-28T17:03:57.028+0000] {sql.py:757} INFO - Loaded 1000 rows into prod_dim_product so far
+[2025-03-28T17:03:58.145+0000] {sql.py:760} INFO - Done loading. Loaded a total of 1615 rows into prod_dim_product
+[2025-03-28T17:03:58.156+0000] {logging_mixin.py:190} INFO - Truncating table: prod_dim_order
+[2025-03-28T17:03:58.180+0000] {sql.py:624} INFO - Running statement: TRUNCATE TABLE prod_dim_order, parameters: None
+[2025-03-28T17:03:58.190+0000] {logging_mixin.py:190} INFO - Loading 1980 rows into prod_dim_order
+[2025-03-28T17:03:59.839+0000] {sql.py:757} INFO - Loaded 1000 rows into prod_dim_order so far
+[2025-03-28T17:04:01.625+0000] {sql.py:760} INFO - Done loading. Loaded a total of 1980 rows into prod_dim_order
+[2025-03-28T17:04:01.636+0000] {logging_mixin.py:190} INFO - Truncating table: prod_dim_customer
+[2025-03-28T17:04:01.663+0000] {sql.py:624} INFO - Running statement: TRUNCATE TABLE prod_dim_customer, parameters: None
+[2025-03-28T17:04:01.690+0000] {logging_mixin.py:190} INFO - Loading 730 rows into prod_dim_customer
+[2025-03-28T17:04:03.054+0000] {sql.py:760} INFO - Done loading. Loaded a total of 730 rows into prod_dim_customer
+[2025-03-28T17:04:03.069+0000] {logging_mixin.py:190} INFO - Truncating table: prod_dim_location
+[2025-03-28T17:04:03.101+0000] {sql.py:624} INFO - Running statement: TRUNCATE TABLE prod_dim_location, parameters: None
+[2025-03-28T17:04:03.113+0000] {logging_mixin.py:190} INFO - Loading 469 rows into prod_dim_location
+[2025-03-28T17:04:04.213+0000] {sql.py:760} INFO - Done loading. Loaded a total of 469 rows into prod_dim_location
+[2025-03-28T17:04:04.229+0000] {logging_mixin.py:190} INFO - Truncating table: prod_dim_date
+[2025-03-28T17:04:04.261+0000] {sql.py:624} INFO - Running statement: TRUNCATE TABLE prod_dim_date, parameters: None
+[2025-03-28T17:04:04.272+0000] {logging_mixin.py:190} INFO - Loading 937 rows into prod_dim_date
+[2025-03-28T17:04:05.972+0000] {sql.py:760} INFO - Done loading. Loaded a total of 937 rows into prod_dim_date
+[2025-03-28T17:04:05.998+0000] {logging_mixin.py:190} INFO - Truncating table: forecast_past_future_sales
+[2025-03-28T17:04:06.032+0000] {sql.py:624} INFO - Running statement: TRUNCATE TABLE forecast_past_future_sales, parameters: None
+[2025-03-28T17:04:06.043+0000] {logging_mixin.py:190} INFO - Loading 2239 rows into forecast_past_future_sales
+[2025-03-28T17:04:06.075+0000] {taskinstance.py:3310} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "src/pymssql/_pymssql.pyx", line 447, in pymssql._pymssql.Cursor.execute
+  File "src/pymssql/_mssql.pyx", line 1125, in pymssql._mssql.MSSQLConnection.execute_query
+  File "src/pymssql/_mssql.pyx", line 1156, in pymssql._mssql.MSSQLConnection.execute_query
+  File "src/pymssql/_mssql.pyx", line 1289, in pymssql._mssql.MSSQLConnection.format_and_run_query
+  File "src/pymssql/_mssql.pyx", line 1855, in pymssql._mssql.check_cancel_and_raise
+  File "src/pymssql/_mssql.pyx", line 1901, in pymssql._mssql.raise_MSSQLDatabaseException
+pymssql._mssql.MSSQLDatabaseException: (207, b"Invalid column name 'yhat'.DB-Lib error message 20018, severity 16:\nGeneral SQL Server error: Check messages from the SQL Server\n")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/opt/airflow/dags/superstore_dag.py", line 298, in load_data_to_prod_db
+    load_csv_to_mssql('forecast_past_future_sales', past_future_sales_file_path, hook)
+  File "/opt/airflow/dags/superstore_dag.py", line 276, in load_csv_to_mssql
+    hook.insert_rows(table=table_name, rows=df.to_records(index=False), target_fields=df.columns.tolist(),
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/providers/common/sql/hooks/sql.py", line 754, in insert_rows
+    cur.execute(sql, values)
+  File "src/pymssql/_pymssql.pyx", line 462, in pymssql._pymssql.Cursor.execute
+pymssql.exceptions.ProgrammingError: (207, b"Invalid column name 'yhat'.DB-Lib error message 20018, severity 16:\nGeneral SQL Server error: Check messages from the SQL Server\n")
+[2025-03-28T17:04:06.096+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-03-28T17:04:06.098+0000] {logging_mixin.py:190} INFO - Task start:2025-03-28 17:03:46.013058+00:00 end:2025-03-28 17:04:06.095680+00:00 duration:20.082622
+[2025-03-28T17:04:06.100+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): load_data_to_prod_db> dag:<DAG: superstore_dag> dagrun:<DagRun superstore_dag @ 2025-03-28 17:03:16.225697+00:00: manual__2025-03-28T17:03:16.225697+00:00, state:running, queued_at: 2025-03-28 17:03:16.238878+00:00. externally triggered: True>
+[2025-03-28T17:04:06.102+0000] {logging_mixin.py:190} INFO - Failure caused by (207, b"Invalid column name 'yhat'.DB-Lib error message 20018, severity 16:\nGeneral SQL Server error: Check messages from the SQL Server\n")
+[2025-03-28T17:04:06.104+0000] {taskinstance.py:1225} INFO - Marking task as UP_FOR_RETRY. dag_id=superstore_dag, task_id=load_data_to_prod_db, run_id=manual__2025-03-28T17:03:16.225697+00:00, execution_date=20250328T170316, start_date=20250328T170346, end_date=20250328T170406
+[2025-03-28T17:04:06.147+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-03-28T17:04:06.149+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 131 for task load_data_to_prod_db ((207, b"Invalid column name 'yhat'.DB-Lib error message 20018, severity 16:\nGeneral SQL Server error: Check messages from the SQL Server\n"); 3422)
+Traceback (most recent call last):
+  File "src/pymssql/_pymssql.pyx", line 447, in pymssql._pymssql.Cursor.execute
+  File "src/pymssql/_mssql.pyx", line 1125, in pymssql._mssql.MSSQLConnection.execute_query
+  File "src/pymssql/_mssql.pyx", line 1156, in pymssql._mssql.MSSQLConnection.execute_query
+  File "src/pymssql/_mssql.pyx", line 1289, in pymssql._mssql.MSSQLConnection.format_and_run_query
+  File "src/pymssql/_mssql.pyx", line 1855, in pymssql._mssql.check_cancel_and_raise
+  File "src/pymssql/_mssql.pyx", line 1901, in pymssql._mssql.raise_MSSQLDatabaseException
+pymssql._mssql.MSSQLDatabaseException: (207, b"Invalid column name 'yhat'.DB-Lib error message 20018, severity 16:\nGeneral SQL Server error: Check messages from the SQL Server\n")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/cli.py", line 115, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 3004, in _run_raw_task
+    return _run_raw_task(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 3158, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 3182, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/opt/airflow/dags/superstore_dag.py", line 298, in load_data_to_prod_db
+    load_csv_to_mssql('forecast_past_future_sales', past_future_sales_file_path, hook)
+  File "/opt/airflow/dags/superstore_dag.py", line 276, in load_csv_to_mssql
+    hook.insert_rows(table=table_name, rows=df.to_records(index=False), target_fields=df.columns.tolist(),
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/providers/common/sql/hooks/sql.py", line 754, in insert_rows
+    cur.execute(sql, values)
+  File "src/pymssql/_pymssql.pyx", line 462, in pymssql._pymssql.Cursor.execute
+pymssql.exceptions.ProgrammingError: (207, b"Invalid column name 'yhat'.DB-Lib error message 20018, severity 16:\nGeneral SQL Server error: Check messages from the SQL Server\n")
+[2025-03-28T17:04:06.164+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-03-28T17:04:06.187+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-28T17:04:06.209+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

@@ -1,0 +1,26 @@
+[2025-03-28T17:19:32.207+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-28T17:19:32.231+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: superstore_dag.write_data_to_csv manual__2025-03-28T17:19:12.683388+00:00 [queued]>
+[2025-03-28T17:19:32.248+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: superstore_dag.write_data_to_csv manual__2025-03-28T17:19:12.683388+00:00 [queued]>
+[2025-03-28T17:19:32.250+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2025-03-28T17:19:32.292+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): write_data_to_csv> on 2025-03-28 17:19:12.683388+00:00
+[2025-03-28T17:19:32.303+0000] {standard_task_runner.py:72} INFO - Started process 3937 to run task
+[2025-03-28T17:19:32.315+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'superstore_dag', 'write_data_to_csv', 'manual__2025-03-28T17:19:12.683388+00:00', '--job-id', '146', '--raw', '--subdir', 'DAGS_FOLDER/superstore_dag.py', '--cfg-path', '/tmp/tmppdxuwic1']
+[2025-03-28T17:19:32.323+0000] {standard_task_runner.py:105} INFO - Job 146: Subtask write_data_to_csv
+[2025-03-28T17:19:32.427+0000] {task_command.py:467} INFO - Running <TaskInstance: superstore_dag.write_data_to_csv manual__2025-03-28T17:19:12.683388+00:00 [running]> on host b7fc87b83960
+[2025-03-28T17:19:32.649+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='superstore_dag' AIRFLOW_CTX_TASK_ID='write_data_to_csv' AIRFLOW_CTX_EXECUTION_DATE='2025-03-28T17:19:12.683388+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-28T17:19:12.683388+00:00'
+[2025-03-28T17:19:32.652+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-28T17:19:32.653+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-28T17:19:32.656+0000] {logging_mixin.py:190} INFO - Current task name:write_data_to_csv state:running start_date:2025-03-28 17:19:32.233573+00:00
+[2025-03-28T17:19:32.658+0000] {logging_mixin.py:190} INFO - Dag name:superstore_dag and current dag run status:running
+[2025-03-28T17:19:32.660+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-03-28T17:19:32.845+0000] {logging_mixin.py:190} INFO - Fact, dimension, and aggregate sales tables saved as CSV in the extract folder.
+[2025-03-28T17:19:32.848+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-03-28T17:19:32.862+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-03-28T17:19:32.863+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=superstore_dag, task_id=write_data_to_csv, run_id=manual__2025-03-28T17:19:12.683388+00:00, execution_date=20250328T171912, start_date=20250328T171932, end_date=20250328T171932
+[2025-03-28T17:19:32.896+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-03-28T17:19:32.898+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-03-28T17:19:32.900+0000] {logging_mixin.py:190} INFO - Dag name:superstore_dag queued_at:2025-03-28 17:19:12.713934+00:00
+[2025-03-28T17:19:32.902+0000] {logging_mixin.py:190} INFO - Task hostname:b7fc87b83960 operator:PythonOperator
+[2025-03-28T17:19:32.937+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-28T17:19:32.976+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-03-28T17:19:32.998+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

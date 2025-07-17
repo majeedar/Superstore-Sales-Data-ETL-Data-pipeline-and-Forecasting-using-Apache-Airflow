@@ -1,0 +1,120 @@
+[2025-03-28T07:04:22.365+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-28T07:04:22.389+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: superstore_dag.load_data_to_prod_db manual__2025-03-28T07:04:04.436222+00:00 [queued]>
+[2025-03-28T07:04:22.407+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: superstore_dag.load_data_to_prod_db manual__2025-03-28T07:04:04.436222+00:00 [queued]>
+[2025-03-28T07:04:22.414+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2025-03-28T07:04:22.459+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): load_data_to_prod_db> on 2025-03-28 07:04:04.436222+00:00
+[2025-03-28T07:04:22.469+0000] {standard_task_runner.py:72} INFO - Started process 750 to run task
+[2025-03-28T07:04:22.476+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'superstore_dag', 'load_data_to_prod_db', 'manual__2025-03-28T07:04:04.436222+00:00', '--job-id', '55', '--raw', '--subdir', 'DAGS_FOLDER/superstore_dag.py', '--cfg-path', '/tmp/tmpkf2ub_nk']
+[2025-03-28T07:04:22.482+0000] {standard_task_runner.py:105} INFO - Job 55: Subtask load_data_to_prod_db
+[2025-03-28T07:04:22.602+0000] {task_command.py:467} INFO - Running <TaskInstance: superstore_dag.load_data_to_prod_db manual__2025-03-28T07:04:04.436222+00:00 [running]> on host e0cefe7bdbf4
+[2025-03-28T07:04:22.774+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='superstore_dag' AIRFLOW_CTX_TASK_ID='load_data_to_prod_db' AIRFLOW_CTX_EXECUTION_DATE='2025-03-28T07:04:04.436222+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-28T07:04:04.436222+00:00'
+[2025-03-28T07:04:22.782+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-28T07:04:22.784+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-28T07:04:22.785+0000] {logging_mixin.py:190} INFO - Current task name:load_data_to_prod_db state:running start_date:2025-03-28 07:04:22.393278+00:00
+[2025-03-28T07:04:22.786+0000] {logging_mixin.py:190} INFO - Dag name:superstore_dag and current dag run status:running
+[2025-03-28T07:04:22.788+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-03-28T07:04:22.813+0000] {logging_mixin.py:190} INFO - Checking and potentially creating table: prod_fact_table
+[2025-03-28T07:04:22.827+0000] {base.py:84} INFO - Retrieving connection '***_default'
+[2025-03-28T07:04:22.865+0000] {sql.py:624} INFO - Running statement: 
+            IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'prod_fact_table')
+            BEGIN
+                CREATE TABLE prod_fact_table ([OrderID_SK] INT, [ProductID_SK] INT, [CustomerID_SK] INT, [LocationID_SK] INT, [DateID_SK] INT, [Sales] FLOAT, [Quantity] INT, [Discount] FLOAT, [Profit] FLOAT, [unit_price] FLOAT);
+                PRINT 'Table prod_fact_table created successfully.';
+            END
+            , parameters: None
+[2025-03-28T07:04:22.884+0000] {logging_mixin.py:190} INFO - Table prod_fact_table exists or was just created.
+[2025-03-28T07:04:22.904+0000] {logging_mixin.py:190} INFO - Checking and potentially creating table: prod_dim_product
+[2025-03-28T07:04:22.938+0000] {sql.py:624} INFO - Running statement: 
+            IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'prod_dim_product')
+            BEGIN
+                CREATE TABLE prod_dim_product ([Product ID] VARCHAR(MAX), [Category] VARCHAR(MAX), [Sub-Category] VARCHAR(MAX), [Product Name] VARCHAR(MAX), [ProductID_SK] INT);
+                PRINT 'Table prod_dim_product created successfully.';
+            END
+            , parameters: None
+[2025-03-28T07:04:22.954+0000] {logging_mixin.py:190} INFO - Table prod_dim_product exists or was just created.
+[2025-03-28T07:04:22.974+0000] {logging_mixin.py:190} INFO - Checking and potentially creating table: prod_dim_order
+[2025-03-28T07:04:23.011+0000] {sql.py:624} INFO - Running statement: 
+            IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'prod_dim_order')
+            BEGIN
+                CREATE TABLE prod_dim_order ([Order ID] VARCHAR(MAX), [Ship Date] VARCHAR(MAX), [Ship Mode] VARCHAR(MAX), [OrderID_SK] INT);
+                PRINT 'Table prod_dim_order created successfully.';
+            END
+            , parameters: None
+[2025-03-28T07:04:23.026+0000] {logging_mixin.py:190} INFO - Table prod_dim_order exists or was just created.
+[2025-03-28T07:04:23.048+0000] {logging_mixin.py:190} INFO - Checking and potentially creating table: prod_dim_customer
+[2025-03-28T07:04:23.078+0000] {sql.py:624} INFO - Running statement: 
+            IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'prod_dim_customer')
+            BEGIN
+                CREATE TABLE prod_dim_customer ([Customer ID] VARCHAR(MAX), [Customer Name] VARCHAR(MAX), [Segment] VARCHAR(MAX), [CustomerID_SK] INT);
+                PRINT 'Table prod_dim_customer created successfully.';
+            END
+            , parameters: None
+[2025-03-28T07:04:23.095+0000] {logging_mixin.py:190} INFO - Table prod_dim_customer exists or was just created.
+[2025-03-28T07:04:23.106+0000] {logging_mixin.py:190} INFO - Checking and potentially creating table: prod_dim_location
+[2025-03-28T07:04:23.137+0000] {sql.py:624} INFO - Running statement: 
+            IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'prod_dim_location')
+            BEGIN
+                CREATE TABLE prod_dim_location ([Postal Code] INT, [City] VARCHAR(MAX), [State] VARCHAR(MAX), [Country] VARCHAR(MAX), [Region] VARCHAR(MAX), [LocationID_SK] INT);
+                PRINT 'Table prod_dim_location created successfully.';
+            END
+            , parameters: None
+[2025-03-28T07:04:23.165+0000] {logging_mixin.py:190} INFO - Table prod_dim_location exists or was just created.
+[2025-03-28T07:04:23.173+0000] {logging_mixin.py:190} INFO - Checking and potentially creating table: prod_dim_date
+[2025-03-28T07:04:23.204+0000] {sql.py:624} INFO - Running statement: 
+            IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'prod_dim_date')
+            BEGIN
+                CREATE TABLE prod_dim_date ([Order Date] VARCHAR(MAX), [DateID_SK] INT, [Order Year] INT, [Order Month] INT, [Order Day] INT);
+                PRINT 'Table prod_dim_date created successfully.';
+            END
+            , parameters: None
+[2025-03-28T07:04:23.218+0000] {logging_mixin.py:190} INFO - Table prod_dim_date exists or was just created.
+[2025-03-28T07:04:23.244+0000] {logging_mixin.py:190} INFO - Truncating table: prod_fact_table
+[2025-03-28T07:04:23.282+0000] {sql.py:624} INFO - Running statement: TRUNCATE TABLE prod_fact_table, parameters: None
+[2025-03-28T07:04:23.292+0000] {logging_mixin.py:190} INFO - Loading 9994 rows into prod_fact_table
+[2025-03-28T07:04:26.359+0000] {sql.py:757} INFO - Loaded 1000 rows into prod_fact_table so far
+[2025-03-28T07:04:29.372+0000] {sql.py:757} INFO - Loaded 2000 rows into prod_fact_table so far
+[2025-03-28T07:04:32.167+0000] {sql.py:757} INFO - Loaded 3000 rows into prod_fact_table so far
+[2025-03-28T07:04:35.116+0000] {sql.py:757} INFO - Loaded 4000 rows into prod_fact_table so far
+[2025-03-28T07:04:37.866+0000] {sql.py:757} INFO - Loaded 5000 rows into prod_fact_table so far
+[2025-03-28T07:04:40.631+0000] {sql.py:757} INFO - Loaded 6000 rows into prod_fact_table so far
+[2025-03-28T07:04:42.874+0000] {sql.py:757} INFO - Loaded 7000 rows into prod_fact_table so far
+[2025-03-28T07:04:45.300+0000] {sql.py:757} INFO - Loaded 8000 rows into prod_fact_table so far
+[2025-03-28T07:04:47.766+0000] {sql.py:757} INFO - Loaded 9000 rows into prod_fact_table so far
+[2025-03-28T07:04:49.791+0000] {sql.py:760} INFO - Done loading. Loaded a total of 9994 rows into prod_fact_table
+[2025-03-28T07:04:49.810+0000] {logging_mixin.py:190} INFO - Truncating table: prod_dim_product
+[2025-03-28T07:04:49.853+0000] {sql.py:624} INFO - Running statement: TRUNCATE TABLE prod_dim_product, parameters: None
+[2025-03-28T07:04:49.866+0000] {logging_mixin.py:190} INFO - Loading 1862 rows into prod_dim_product
+[2025-03-28T07:04:52.046+0000] {sql.py:757} INFO - Loaded 1000 rows into prod_dim_product so far
+[2025-03-28T07:04:53.950+0000] {sql.py:760} INFO - Done loading. Loaded a total of 1862 rows into prod_dim_product
+[2025-03-28T07:04:53.971+0000] {logging_mixin.py:190} INFO - Truncating table: prod_dim_order
+[2025-03-28T07:04:53.998+0000] {sql.py:624} INFO - Running statement: TRUNCATE TABLE prod_dim_order, parameters: None
+[2025-03-28T07:04:54.014+0000] {logging_mixin.py:190} INFO - Loading 5009 rows into prod_dim_order
+[2025-03-28T07:04:56.847+0000] {sql.py:757} INFO - Loaded 1000 rows into prod_dim_order so far
+[2025-03-28T07:04:59.275+0000] {sql.py:757} INFO - Loaded 2000 rows into prod_dim_order so far
+[2025-03-28T07:05:01.589+0000] {sql.py:757} INFO - Loaded 3000 rows into prod_dim_order so far
+[2025-03-28T07:05:03.645+0000] {sql.py:757} INFO - Loaded 4000 rows into prod_dim_order so far
+[2025-03-28T07:05:06.778+0000] {sql.py:757} INFO - Loaded 5000 rows into prod_dim_order so far
+[2025-03-28T07:05:06.801+0000] {sql.py:760} INFO - Done loading. Loaded a total of 5009 rows into prod_dim_order
+[2025-03-28T07:05:06.811+0000] {logging_mixin.py:190} INFO - Truncating table: prod_dim_customer
+[2025-03-28T07:05:06.839+0000] {sql.py:624} INFO - Running statement: TRUNCATE TABLE prod_dim_customer, parameters: None
+[2025-03-28T07:05:06.848+0000] {logging_mixin.py:190} INFO - Loading 793 rows into prod_dim_customer
+[2025-03-28T07:05:08.972+0000] {sql.py:760} INFO - Done loading. Loaded a total of 793 rows into prod_dim_customer
+[2025-03-28T07:05:08.987+0000] {logging_mixin.py:190} INFO - Truncating table: prod_dim_location
+[2025-03-28T07:05:09.020+0000] {sql.py:624} INFO - Running statement: TRUNCATE TABLE prod_dim_location, parameters: None
+[2025-03-28T07:05:09.048+0000] {logging_mixin.py:190} INFO - Loading 631 rows into prod_dim_location
+[2025-03-28T07:05:10.623+0000] {sql.py:760} INFO - Done loading. Loaded a total of 631 rows into prod_dim_location
+[2025-03-28T07:05:10.632+0000] {logging_mixin.py:190} INFO - Truncating table: prod_dim_date
+[2025-03-28T07:05:10.659+0000] {sql.py:624} INFO - Running statement: TRUNCATE TABLE prod_dim_date, parameters: None
+[2025-03-28T07:05:10.667+0000] {logging_mixin.py:190} INFO - Loading 1237 rows into prod_dim_date
+[2025-03-28T07:05:12.902+0000] {sql.py:757} INFO - Loaded 1000 rows into prod_dim_date so far
+[2025-03-28T07:05:13.392+0000] {sql.py:760} INFO - Done loading. Loaded a total of 1237 rows into prod_dim_date
+[2025-03-28T07:05:13.396+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-03-28T07:05:13.419+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-03-28T07:05:13.421+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=superstore_dag, task_id=load_data_to_prod_db, run_id=manual__2025-03-28T07:04:04.436222+00:00, execution_date=20250328T070404, start_date=20250328T070422, end_date=20250328T070513
+[2025-03-28T07:05:13.462+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-03-28T07:05:13.466+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-03-28T07:05:13.468+0000] {logging_mixin.py:190} INFO - Dag name:superstore_dag queued_at:2025-03-28 07:04:04.462331+00:00
+[2025-03-28T07:05:13.470+0000] {logging_mixin.py:190} INFO - Task hostname:e0cefe7bdbf4 operator:PythonOperator
+[2025-03-28T07:05:13.507+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-28T07:05:13.536+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-28T07:05:13.559+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

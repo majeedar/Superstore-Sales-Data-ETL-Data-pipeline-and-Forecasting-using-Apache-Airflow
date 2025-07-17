@@ -1,0 +1,116 @@
+[2025-03-28T07:02:24.907+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-28T07:02:24.938+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: superstore_dag.transform_data manual__2025-03-28T07:02:16.574940+00:00 [queued]>
+[2025-03-28T07:02:24.951+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: superstore_dag.transform_data manual__2025-03-28T07:02:16.574940+00:00 [queued]>
+[2025-03-28T07:02:24.955+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2025-03-28T07:02:25.004+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): transform_data> on 2025-03-28 07:02:16.574940+00:00
+[2025-03-28T07:02:25.014+0000] {standard_task_runner.py:72} INFO - Started process 622 to run task
+[2025-03-28T07:02:25.017+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'superstore_dag', 'transform_data', 'manual__2025-03-28T07:02:16.574940+00:00', '--job-id', '48', '--raw', '--subdir', 'DAGS_FOLDER/superstore_dag.py', '--cfg-path', '/tmp/tmpngvqimoh']
+[2025-03-28T07:02:25.020+0000] {standard_task_runner.py:105} INFO - Job 48: Subtask transform_data
+[2025-03-28T07:02:25.107+0000] {task_command.py:467} INFO - Running <TaskInstance: superstore_dag.transform_data manual__2025-03-28T07:02:16.574940+00:00 [running]> on host e0cefe7bdbf4
+[2025-03-28T07:02:25.274+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='superstore_dag' AIRFLOW_CTX_TASK_ID='transform_data' AIRFLOW_CTX_EXECUTION_DATE='2025-03-28T07:02:16.574940+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-28T07:02:16.574940+00:00'
+[2025-03-28T07:02:25.276+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-28T07:02:25.280+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-28T07:02:25.283+0000] {logging_mixin.py:190} INFO - Current task name:transform_data state:running start_date:2025-03-28 07:02:24.940532+00:00
+[2025-03-28T07:02:25.285+0000] {logging_mixin.py:190} INFO - Dag name:superstore_dag and current dag run status:running
+[2025-03-28T07:02:25.287+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-03-28T07:02:25.366+0000] {logging_mixin.py:190} INFO - Columns in the DataFrame received for transformation:
+[2025-03-28T07:02:25.369+0000] {logging_mixin.py:190} INFO - Index(['Row ID', 'Order ID', 'Order Date', 'Ship Date', 'Ship Mode',
+       'Customer ID', 'Customer Name', 'Segment', 'Country', 'City', 'State',
+       'Postal Code', 'Region', 'Product ID', 'Category', 'Sub-Category',
+       'Product Name', 'Sales', 'Quantity', 'Discount', 'Profit'],
+      dtype='object')
+[2025-03-28T07:02:25.406+0000] {warnings.py:109} WARNING - /opt/***/dags/superstore_dag.py:108: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  fact_df['unit_price'] = fact_df['Sales'] / fact_df['Quantity']
+
+[2025-03-28T07:02:25.429+0000] {python.py:240} INFO - Done. Returned value was: (     OrderID_SK  ProductID_SK  CustomerID_SK  ...  Discount    Profit  unit_price
+0             1             1              1  ...      0.00   41.9136    130.9800
+1             1             2              1  ...      0.00  219.5820    243.9800
+2             2             3              2  ...      0.00    6.8714      7.3100
+3             3             4              3  ...      0.45 -383.0310    191.5155
+4             3             5              3  ...      0.20    2.5164     11.1840
+..          ...           ...            ...  ...       ...       ...         ...
+995         478           639            361  ...      0.00  173.0316    205.9900
+996         479           762            362  ...      0.00    4.9082     10.6700
+997         479           763            362  ...      0.00    9.8901     12.2100
+998         479           764            362  ...      0.00    9.1580      4.8200
+999         479           284            362  ...      0.00   12.9129      4.7300
+
+[1000 rows x 10 columns],           Product ID  ... ProductID_SK
+0    FUR-BO-10001798  ...            1
+1    FUR-CH-10000454  ...            2
+2    OFF-LA-10000240  ...            3
+3    FUR-TA-10000577  ...            4
+4    OFF-ST-10000760  ...            5
+..               ...  ...          ...
+759  OFF-PA-10003625  ...          760
+760  OFF-BI-10003925  ...          761
+761  OFF-EN-10003862  ...          762
+762  OFF-ST-10004258  ...          763
+763  FUR-FU-10002885  ...          764
+
+[764 rows x 5 columns],            Order ID   Ship Date       Ship Mode  OrderID_SK
+0    CA-2016-152156  2016-11-11    Second Class           1
+1    CA-2016-138688  2016-06-16    Second Class           2
+2    US-2015-108966  2015-10-18  Standard Class           3
+3    CA-2014-115812  2014-06-14  Standard Class           4
+4    CA-2017-114412  2017-04-20  Standard Class           5
+..              ...         ...             ...         ...
+474  CA-2015-153549  2015-03-31    Second Class         475
+475  CA-2016-110023  2016-09-11     First Class         476
+476  CA-2016-105585  2016-08-27     First Class         477
+477  CA-2014-117639  2014-05-25  Standard Class         478
+478  CA-2015-162537  2015-11-03  Standard Class         479
+
+[479 rows x 4 columns],     Customer ID     Customer Name      Segment  CustomerID_SK
+0      CG-12520       Claire Gute     Consumer              1
+1      DV-13045   Darrin Van Huff    Corporate              2
+2      SO-20335    Sean O'Donnell     Consumer              3
+3      BH-11710   Brosina Hoffman     Consumer              4
+4      AA-10480      Andrew Allen     Consumer              5
+..          ...               ...          ...            ...
+357    AS-10630        Ann Steele  Home Office            358
+358    TS-21340     Toby Swindell     Consumer            359
+359    SL-20155    Sara Luxemburg  Home Office            360
+360    MW-18235  Mitch Willingham    Corporate            361
+361    RD-19585          Rob Dowd     Consumer            362
+
+[362 rows x 4 columns],     Postal Code             City  ...   Region LocationID_SK
+0         42420        Henderson  ...    South             1
+1         90036      Los Angeles  ...     West             2
+2         33311  Fort Lauderdale  ...    South             3
+3         90032      Los Angeles  ...     West             4
+4         28027          Concord  ...    South             5
+..          ...              ...  ...      ...           ...
+216       90503         Torrance  ...     West           217
+217       78664       Round Rock  ...  Central           218
+218       92054        Oceanside  ...     West           219
+219       33433       Boca Raton  ...    South           220
+220       23464   Virginia Beach  ...    South           221
+
+[221 rows x 6 columns],     Order Date  DateID_SK  Order Year  Order Month  Order Day
+0   2016-11-08          1        2016           11          8
+1   2016-06-12          2        2016            6         12
+2   2015-10-11          3        2015           10         11
+3   2014-06-09          4        2014            6          9
+4   2017-04-15          5        2017            4         15
+..         ...        ...         ...          ...        ...
+368 2015-03-29        369        2015            3         29
+369 2016-09-09        370        2016            9          9
+370 2016-08-26        371        2016            8         26
+371 2014-05-21        372        2014            5         21
+372 2015-10-28        373        2015           10         28
+
+[373 rows x 5 columns])
+[2025-03-28T07:02:25.598+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-03-28T07:02:25.600+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=superstore_dag, task_id=transform_data, run_id=manual__2025-03-28T07:02:16.574940+00:00, execution_date=20250328T070216, start_date=20250328T070224, end_date=20250328T070225
+[2025-03-28T07:02:25.636+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-03-28T07:02:25.639+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-03-28T07:02:25.641+0000] {logging_mixin.py:190} INFO - Dag name:superstore_dag queued_at:2025-03-28 07:02:16.588237+00:00
+[2025-03-28T07:02:25.646+0000] {logging_mixin.py:190} INFO - Task hostname:e0cefe7bdbf4 operator:PythonOperator
+[2025-03-28T07:02:25.675+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-28T07:02:25.719+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-03-28T07:02:25.745+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
