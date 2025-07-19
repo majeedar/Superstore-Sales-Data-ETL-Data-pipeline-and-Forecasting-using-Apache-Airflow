@@ -1,2 +1,2 @@
-## Superstore-Sales-ETL-Data-pipeline-and-Forecasting-using-Apache-Airflow
-This project automates the ETL process and forecasting of Superstore sales data using Apache Airflow
+📦 Superstore Sales Data ETL, Forecasting & Data Warehouse Loading using Apache Airflow
+This project implements a modular and automated ETL + Forecasting pipeline for Superstore sales data. It uses Apache Airflow for orchestration, Prophet for time series forecasting, and Microsoft SQL Server for storing processed and forecasted data in an OLAP-friendly structure.
